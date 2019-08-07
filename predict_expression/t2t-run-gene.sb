@@ -1,0 +1,79 @@
+#!/bin/bash
+
+#SBATCH -p gpu
+#SBATCH -n 1
+#SBATCH --gres=gpu:p100:1
+#SBATCH --mem 10000
+#SBATCH --time 10-0:0:0
+#SBATCH -J t2t-gene
+#SBATCH -o t2t-gene.out
+#SBATCH -e t2t-gene.err
+
+. ~/tf1.14/bin/activate
+
+#pip install tensor2tensor
+
+# See what problems, models, and hyperparameter sets are available.
+# You can easily swap between them (and add new ones).
+#t2t-trainer --registry_help
+
+PROBLEM=expression_level_predict
+MODEL=transformer_encoder
+HPARAMS=transformer_tiny
+
+USR_DIR=...
+DATA_DIR=$HOME/t2t_data/gene
+# TMP_DIR=/tmp/t2t_gene/
+NUMGPU=1
+TRAIN_DIR=$HOME/t2t_train/$PROBLEM/$MODEL-$HPARAMS
+STEPS=2000
+
+# echo "Visible devices"
+# echo $CUDA_VISIBLE_DEVICES
+#
+# mkdir -p $DATA_DIR $TMP_DIR $TRAIN_DIR
+
+# Generate data
+t2t-datagen \
+  --t2t_usr_dir=$USR_DIR \
+  --data_dir=$DATA_DIR \
+  # --tmp_dir=$TMP_DIR \
+  --problem=$PROBLEM
+
+# # Train
+# # *  If you run out of memory, add --hparams='batch_size=1024'.
+# t2t-trainer \
+#   --data_dir=$DATA_DIR \
+#   --problem=$PROBLEM \
+#   --model=$MODEL \
+#   --hparams_set=$HPARAMS \
+#   --output_dir=$TRAIN_DIR \
+#   --train_steps=$STEPS \
+#   --worker_gpu=$NUMGPU
+
+## Decode
+
+#DECODE_FILE=$DATA_DIR/decode_this.txt
+#echo "Hello world" >> $DECODE_FILE
+#echo "Goodbye world" >> $DECODE_FILE
+#echo -e 'Hallo Welt\nAuf Wiedersehen Welt' > ref-translation.de
+
+#BEAM_SIZE=4
+#ALPHA=0.6
+
+#t2t-decoder \
+#  --data_dir=$DATA_DIR \
+#  --problem=$PROBLEM \
+#  --model=$MODEL \
+#  --hparams_set=$HPARAMS \
+#  --output_dir=$TRAIN_DIR \
+#  --decode_hparams="beam_size=$BEAM_SIZE,alpha=$ALPHA" \
+#  --decode_from_file=$DECODE_FILE \
+#  --decode_to_file=translation.en
+
+## See the translations
+#cat translation.en
+
+## Evaluate the BLEU score
+## Note: Report this BLEU score in papers, not the internal approx_bleu metric.
+#t2t-bleu --translation=translation.en --reference=ref-translation.de
