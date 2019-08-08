@@ -11,8 +11,6 @@
 
 . ~/tf1.14/bin/activate
 
-#pip install tensor2tensor
-
 # See what problems, models, and hyperparameter sets are available.
 # You can easily swap between them (and add new ones).
 #t2t-trainer --registry_help
