@@ -28,7 +28,7 @@ File format expected:
   * Each record in *_in is a float 2-D numpy array with shape
     [num_input_timesteps, embedded vector length].
   * Each record in *_out is a float 2-D numpy array with shape
-    [num_predictions]. #num_output_timesteps,
+    [num_predictions]. #num_output_timesteps,x
 """
 from __future__ import absolute_import
 from __future__ import division
