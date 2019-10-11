@@ -47,6 +47,7 @@ alias srrtx='srun --pty --partition=gpu24 --gres=gpu:titanrtx:1 --mem=24g -t 8:0
 alias si='sinfo -p gpu'
 alias hgrep='history | grep '
 alias grep='grep --color=always'
+alias gitadd="find /home/vagar -maxdepth 1 -name '.bash*' -or -name '.Rprofile' -or -name '.inputrc' | xargs git add; find /home/vagar/predict_expression -name '*.py' -or -name '*.ipynb' -or -name '*.sb' -or -name '*.gin' -or -name '*.joblib' -or -name '*.sh' | xargs git add; git commit -m 'commit'; git push origin master"
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.

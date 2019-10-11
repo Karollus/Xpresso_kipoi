@@ -623,3 +623,19 @@ find /home/vagar/ -depth 2 -name '*profile'
 find /home/vagar/ -maxdepth 2 -name '*profile' 
 find /home/vagar/ -maxdepth 1 -name '*profile' 
 find . -maxdepth 2 -name '.bash*' -or -name '.Rprofile' -or -name '.inputrc' 
+find . -maxdepth 2 -name '.bash*' -or -name '.Rprofile' -or -name '.inputrc' | xargs git add
+git commit -m "commit"; git push -u origin master
+nano ~/.bashrc 
+nano tretest_gene_local.sb 
+nano ~/.bashrc 
+. ~/.bashrc 
+which gitadd 
+alias gitadd
+nano ~/.bashrc 
+. ~/.bashrc 
+alias gitadd
+gitadd
+alias gitadd
+nano ~/.bashrc 
+. ~/.bashrc 
+alias gitadd
