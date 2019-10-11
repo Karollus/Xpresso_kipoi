@@ -68,12 +68,21 @@ class GeneExpressionProblem(problem.Problem):
 
   @property
   def num_output_predictions(self):
-    """Number of float predictions per timestep."""
-    return 10
+    raise NotImplementedError()
 
   @property
   def chunk_size(self):
     return 4
+
+  @property
+  def num_embed(self):
+    """Embedding dimension."""
+    raise NotImplementedError()
+
+  @property
+  def num_input_timestamps(self):
+    """Number of timesteps to include in the input."""
+    raise NotImplementedError()
 
   def feature_encoders(self, data_dir):
     del data_dir
@@ -86,6 +95,7 @@ class GeneExpressionProblem(problem.Problem):
   def num_shards(self):
     return 100
 
+
   def generate_data(self, data_dir, tmp_dir, task_id=-1):
     try:
       # Download source data if download_url specified
@@ -93,7 +103,7 @@ class GeneExpressionProblem(problem.Problem):
                                                    self.download_url)
     except NotImplementedError:
       # Otherwise, look for it locally
-      h5_filepath = os.path.join(tmp_dir, self.h5_file)
+      h5_filepath = os.path.join(data_dir, self.h5_file)
 
     with h5py.File(h5_filepath, "r") as h5_file:
       num_train_examples = h5_file["train_in"].len()
@@ -105,9 +115,9 @@ class GeneExpressionProblem(problem.Problem):
     # Collect created shard processes to start and join
     processes = []
 
-    datasets = [(self.training_filepaths, self.num_shards, "train",
-                 num_train_examples), (self.dev_filepaths, 10, "valid",
-                                       num_dev_examples),
+    datasets = [#(self.training_filepaths, self.num_shards, "train",
+                # num_train_examples), (self.dev_filepaths, 10, "valid",
+                #                       num_dev_examples),
                 (self.test_filepaths, 10, "test", num_test_examples)]
     for fname_fn, nshards, key_prefix, num_examples in datasets:
       outfiles = fname_fn(data_dir, nshards, shuffled=False)
@@ -121,7 +131,7 @@ class GeneExpressionProblem(problem.Problem):
         processes.append(p)
 
     # 1 per training shard + 10 for dev + 10 for test
-    assert len(processes) == self.num_shards + 20
+    #assert len(processes) == self.num_shards + 20
 
     # Start and wait for processes in batches
     num_batches = int(
@@ -136,16 +146,17 @@ class GeneExpressionProblem(problem.Problem):
         p.join()
 
     # Shuffle
-    generator_utils.shuffle_dataset(all_filepaths)
+    # generator_utils.shuffle_dataset(all_filepaths)
 
   def hparams(self, defaults, unused_model_hparams):
     p = defaults
-    p.modality = {"inputs": modalities.ModalityType.REAL, #VA mod
-                  "targets": modalities.ModalityType.REAL_L2_LOSS} #CHECK WHICH MODALITY TO USE  #VA mod
-    # p.vocab_size = {"inputs": self._encoders["inputs"].vocab_size,
-    #                 "targets": self.num_output_predictions}
-    p.input_space_id = problem.SpaceID.REAL #check if this pairs w/ SYMBOL modality or REAL modality??  #VA mod
+    p.modality = {"inputs": modalities.ModalityType.REAL, #VA mod --> similar to timeseries.py
+                  "targets": modalities.ModalityType.REAL_L2_LOSS} #VA mod
+    p.vocab_size = {"inputs": self.num_embed,
+                    "targets": self.num_output_predictions}
+    p.input_space_id = problem.SpaceID.REAL #VA mod
     p.target_space_id = problem.SpaceID.REAL
+    # p.use_fixed_batch_size = True
 
   def example_reading_spec(self):
     data_fields = {
@@ -155,30 +166,74 @@ class GeneExpressionProblem(problem.Problem):
     data_items_to_decoders = None
     return (data_fields, data_items_to_decoders)
 
-  # VA mod
-  # def preprocess_example(self, example, mode, unused_hparams):
-  #   del mode
-  #
-  #   # Reshape targets to contain num_output_predictions per output timestep
-  #   #example["targets"] = tf.reshape(example["targets"],
-  #   #                                [-1, 1, self.num_output_predictions])
-  #   # Slice off EOS - not needed, and messes up the GeneExpressionConv model
-  #   # which expects the input length to be a multiple of the target length.
-  #   #example["inputs"] = example["inputs"][:-1] #VA mod
-  #
-  #   return example
+  @property
+  def normalizing_constant(self):
+    """Constant by which all data will be multiplied to be more normalized."""
+    return 1  #Adjust so that your loss is around 1 or 10 or 100, not 1e+9.
+
+  # VA mod, similar to TimeSeries Problem
+  def preprocess_example(self, example, unused_mode, unused_hparams):
+    # TFRecords are flat on disk, we un-flatten them back here.
+    flat_inputs = example["inputs"]
+    flat_targets = example["targets"]
+    c = self.normalizing_constant
+    # Tensor2Tensor models expect [height, width, depth] examples, here we
+    # use height for time and set width to 1 and num_embed is our depth.
+    # example["inputs"] = tf.reshape(
+    #         flat_inputs, [self.num_input_timestamps, self.num_embed]) * c #,
+    #     #tf.ones([1, 1, self.num_input_timestamps], tf.int32) ) #1,
+    # example["targets"] = tf.reshape(
+    #     flat_targets, [self.num_output_predictions]) * c #-1, 1,
+    example["inputs"] = tf.reshape(
+            flat_inputs, [1, self.num_input_timestamps, self.num_embed]) * c #,
+    example["targets"] = tf.reshape(
+        flat_targets, [-1, 1, self.num_output_predictions]) * c #
+    return example
 
   def eval_metrics(self):
-    return [metrics.Metrics.RMSE, metrics.Metrics.R2] #VA mod
+    return [metrics.Metrics.RMSE, metrics.Metrics.R2, metrics.Metrics.PEARSON] #VA mod
 
 
 @registry.register_problem
-class ExpressionLevelPredict(GeneExpressionProblem): #VA mod
+class ExpressionLevelPredictPca(GeneExpressionProblem): #VA mod
+  @property
+  def num_output_predictions(self):
+    """Number of float predictions per timestep."""
+    return 57
 
   @property
   def h5_file(self):
     return "expr_preds.h5" #VA mod
 
+  @property
+  def num_embed(self):
+    """Embedding dimension."""
+    return 117
+
+  @property
+  def num_input_timestamps(self):
+    """Number of timestamps to include in the input."""
+    return 1001
+
+# class ExpressionLevelPredict(GeneExpressionProblem): #VA mod
+#   @property
+#   def num_output_predictions(self):
+#     """Number of float predictions per timestep."""
+#     return 57
+#
+#   @property
+#   def h5_file(self):
+#     return "expr_preds.h5" #VA mod
+#
+#   @property
+#   def num_embed(self):
+#     """Embedding dimension."""
+#     return 2002
+#
+#   @property
+#   def num_input_timestamps(self):
+#     """Number of timestamps to include in the input."""
+#     return 1001
 
 def generate_shard_args(outfiles, num_examples):
   """Generate start and end indices per outfile."""
@@ -230,11 +285,12 @@ def dataset_generator(filepath,
 
       # The output is (n, m); store targets_shape so that it can be reshaped
       # properly on the other end.
+      inputs = [float(v) for v in inputs.flatten()]
       targets = [float(v) for v in outputs.flatten()]
-      targets_shape = [int(dim) for dim in outputs.shape]
+      #targets_shape = [int(dim) for dim in outputs.shape]
 
-      example_keys = ["inputs", "targets", "targets_shape"]
-      ex_dict = dict(zip(example_keys, [input_ids, targets, targets_shape]))
+      example_keys = ["inputs", "targets"] #, "targets_shape"
+      ex_dict = dict(zip(example_keys, [inputs, targets])) #, targets_shape
 
       # Original data has one output for every 128 input bases. Ensure that the
       # ratio has been maintained given the chunk size and removing EOS.

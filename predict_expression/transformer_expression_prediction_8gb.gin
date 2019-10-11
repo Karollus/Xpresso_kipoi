@@ -1,0 +1,49 @@
+import tensor2tensor.trax.inputs
+import tensor2tensor.trax.models
+import tensor2tensor.trax.optimizers
+import tensor2tensor.trax.trax
+
+# Parameters for batch_fun:
+# ==============================================================================
+batch_fun.batch_size_per_device = 64
+batch_fun.eval_batch_size = 64
+batch_fun.max_eval_length = 1001
+
+# Parameters for inputs:
+# ==============================================================================
+inputs.data_dir = '/home/vagar/predict_expression/prepared_data/'
+inputs.dataset_name = 't2t_expression_level_predict_pca'
+#inputs.input_name = 'inputs'
+#inputs.append_targets = True
+
+
+# Parameters for MultifactorSchedule:
+# ==============================================================================
+MultifactorSchedule.constant = 0.1
+MultifactorSchedule.factors = 'constant * linear_warmup * rsqrt_decay'
+MultifactorSchedule.warmup_steps = 8000
+
+# Parameters for preprocess_fun:
+# ==============================================================================
+# shuffle_and_batch_data.preprocess_fun=@trax.inputs.lm1b_preprocess
+# lm1b_preprocess.max_target_length = 512
+# lm1b_preprocess.max_eval_target_length = 2048
+
+# Parameters for train:
+# ==============================================================================
+train.eval_frequency = 100
+train.eval_steps = 10
+train.inputs = @trax.inputs.inputs
+train.model = @trax.models.TransformerEncoder
+train.train_steps = 100000
+
+# Parameters for TransformerEncoder:
+# ==============================================================================
+TransformerEncoder.d_model = 64
+TransformerEncoder.d_ff = 128
+TransformerEncoder.dropout = 0.1
+TransformerEncoder.max_len = 1001
+TransformerEncoder.mode = 'eval'
+TransformerEncoder.n_classes = 57
+TransformerEncoder.n_heads = 2
+TransformerEncoder.n_layers = 2
