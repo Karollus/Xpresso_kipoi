@@ -1147,3 +1147,4 @@ touch BUILD
 touch train_on_2x2.sh
 touch vikramtrax.py
 nano ~/.bashrc 
+gitadd 
