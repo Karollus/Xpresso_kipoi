@@ -1119,3 +1119,31 @@ less ~/.bashrc
 ls ~/predict_expression/
 less ~/.bashrc 
 gitadd 
+ls google-drive/
+rmdir google-drive/
+lh ALBERT/yeastTest
+less ALBERT/run_regression.py 
+less ALBERT/classifier_utils.py 
+mkdir unsupervised_learning
+mv unsupervised_learning/ semisupervised_learning/
+ln -s ../sentencepiece/yeastTest/ .
+ln -s ../ALBERT/yeast* .
+ln -s ../ALBERT/*sb .
+ln -s ../ALBERT/*json .
+ln -s ../ALBERT/classifier_utils.py 
+ln -s ../ALBERT/run_regression.py 
+ln -s ../ALBERT/run.sh 
+less ~/.bashrc 
+grep gitadd ~/.bashrc 
+find /home/vagar/semisupervised_learning/ -name '*.py' -or -name '*.ipynb' -or -name '*.sb' -or -name '*.gin' -or -name '*.joblib' -or -name '*.sh'
+nano test.txt 
+nano ~/.bashrc 
+find /home/vagar/semisupervised_learning/ -name '*.py' -or -name '*.ipynb' -or -name '*.sb' -or -name '*.gin' -or -name '*.joblib' -or -name '*.sh' -or -name '*.json'
+mkdir google3
+mkdir configs
+touch configs/sweep.yaml
+touch configs/transformer_expression_prediction_8gb.gin
+touch BUILD
+touch train_on_2x2.sh
+touch vikramtrax.py
+nano ~/.bashrc 
