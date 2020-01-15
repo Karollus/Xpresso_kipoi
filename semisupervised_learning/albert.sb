@@ -1,1 +1,18 @@
-../ALBERT/albert.sb
+#!/bin/bash
+
+#SBATCH -p gpu24
+#SBATCH -n 4
+#SBATCH --gres=gpu:titanrtx:1
+#SBATCH --mem 23000
+#SBATCH --time 10-0:0:0
+#SBATCH -J albert
+#SBATCH -o albert.out
+#SBATCH -e albert.err
+
+#. ~/tf1.14/bin/activate
+#. /home/vagar/anaconda3/etc/profile.d/conda.sh
+#conda activate tf2beta
+
+python run_pretraining.py --output_dir yeast3utrModel --do_train --do_eval \
+  --input_file yeastTest/yeast3utrWithSPM.tfrecord --max_predictions_per_seq 50 \
+  --albert_config_file albert_config.json
