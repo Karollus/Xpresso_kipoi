@@ -1,641 +1,1121 @@
-cat /usr/local/cuda/version.txt
-grep CUDNN_MAJOR -A 2 /usr/local/cuda/include/cudnn.h
-nvcc --version
-sudo apt-get install nvidia-cuda-toolkit
-pip freeze | grep tensorflow-gpu
-rm pip freeze | grep tensorflow-gpu
-rm /usr/local/cuda
-echo $HOSTNAME
-rm /usr/local/cuda
-ls /usr/local/cuda
-lh /usr/local/cuda
-sudo apt-get install nvidia-cuda-toolkit
-nvcc --version
-ln -s /usr/local/cuda-10.0 /usr/local/cuda
-echo $LD_LIBRARY_PATH 
-less ~/.bashrc 
-nano ~/.bashrc 
-. ~/.bashrc 
-echo $LD_LIBRARY_PATH 
-srk80 
-. ~/.bashrc 
-echo $LD_LIBRARY_PATH 
-nano ~/.bashrc 
-export LD_LIBRARY_PATH=""
-echo $LD_LIBRARY_PATH 
-. ~/.bashrc 
-echo $LD_LIBRARY_PATH 
-nano ~/.bashrc 
-export LD_LIBRARY_PATH=""
-. ~/.bashrc 
-echo $LD_LIBRARY_PATH 
-export LD_LIBRARY_PATH=""
-echo $LD_LIBRARY_PATH 
-nano ~/.bashrc 
-. ~/.bashrc 
-echo $LD_LIBRARY_PATH 
-python ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/layers/convolution_test.py 
-nano ~/.bashrc 
-. ~/.bashrc 
-echo $LD_LIBRARY_PATH 
-python ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/layers/convolution_test.py 
-echo $HOSTNAME
-. ~/.bashrc 
-echo $LD_LIBRARY_PATH 
-python ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/layers/convolution_test.py 
-nano ~/.bashrc 
-find /usr/local/cuda-10.0/ -name 'libcudnn*'
-ls /usr/local/cuda-10.0/targets/x86_64-linux/lib/
-ls /usr/local/cuda-10.1/targets/x86_64-linux/lib/
-nano ~/.bashrc 
-. ~/.bashrc 
-export LD_LIBRARY_PATH
-echo $LD_LIBRARY_PATH
-nano ~/.bashrc 
-python ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/layers/convolution_test.py 
-. ~/tf2beta/bin/activate
-python ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/layers/convolution_test.py 
-pip install -e git+https://github.com/tensorflow/tensor2tensor.git@master#egg=tensor2tensor
-pip install --upgrade pip
-python ~/tf2beta/src/tensor2tensor/tensor2tensor/trax/layers/convolution_test.py 
-pip install --upgrade -q https://storage.googleapis.com/jax-releases/cuda100/jaxlib-0.1.23-cp36-none-linux_x86_64.whl
-pip install --upgrade jax
-python ~/tf2beta/src/tensor2tensor/tensor2tensor/trax/layers/convolution_test.py 
-python ~/tf2beta/src/tensor2tensor/tensor2tensor/trax/layers/normalization.py 
-python ~/tf2beta/src/tensor2tensor/tensor2tensor/trax/models/transformer_test.py 
-conda list
-nano ~/.bashrc 
-echo $CUDA_VISIBLE_DEVICES 
-echo $CUDA_HOME
-nano ~/.bashrc 
-srk80 
-echo $HOSTNAME
-srk80 
-srp100
-squeue 
-squeue | grep vagar
-. ~/tf2beta/bin/activate
-export LD_LIBRARY_PATH
-. ~/.bashrc 
-echo $LD_LIBRARY_PATH
-python ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/layers/convolution_test.py 
-python ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/layers/rnn_test.py 
-less ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/configs/transformer_imdb_8gb.gin 
-srk80 
-. ~/.bashrc 
-echo $LD_LIBRARY_PATH
-python ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/layers/convolution_test.py 
-python -m tensor2tensor.trax.trainer --config_file=/home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/configs/transformer_imdb_8gb.gin --output_dir=~/t2t_train/sentiment_imdb/trax
-tensorboard --logdir=/home/vagar/t2t_train/sentiment_imdb/trax/
-srp100
-echo $HOSTNAME
-tensorboard --logdir=/home/vagar/t2t_train/sentiment_imdb/trax/
-cp ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/configs/transformer_imdb_8gb.gin transformer_expression_prediction_8gb.gin
-less __init__.py 
-less gene_expression_VA.py 
-ln -s ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/configs/transformer_imdb_8gb.gin
-less test.py 
-rm test.py 
-less trax_transformer_train.py 
-. ~/.bashrc 
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer_encoder
-ls prepared_data/
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer_enc
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer
-t2t-trainer --registry_help
-t2t-datagen --registry_help
-t2t-datagen --t2t_usr_dir=... --registry_help
-t2t-datagen --t2t_usr_dir=/home/vagar/predict_expression --registry_help
-t2t-datagen --registry_help
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer
-pwd
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer
-echo $HOSTNAME
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer
-find ~/tf1.14/src/tensor2tensor -name '*py' -exec grep -H -e tictac {} \;
-find ~/tf1.14/src/tensor2tensor -name '*py' -exec grep -H -e eacher {} \;
-find ~/tf1.14/src/tensor2tensor -name '*py' -exec grep -H -e Reacher {} \;
-less /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/envs/tic_tac_toe_env_test.py 
-python /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/envs/tic_tac_toe_env_test.py 
-less /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/envs/tic_tac_toe_env.py 
-less /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/envs/mujoco_problems.py 
-less /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/envs/rendered_env_problem.py 
-pwd
-python /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/envs/tic_tac_toe_env_test.py 
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer
+head -2 dev.tsv
+tail -2 train.tsv
+grep -A2 YOL136C yeast_all_data.shuffled.tsv
+tail -n+2401 yeast_all_data.shuffled.tsv | head -86 | cat <(head -1 yeast_all_data.tsv) - >test.tsv
+tail -2 dev.tsv 
+grep -A2 YJL079C yeast_all_data.shuffled.tsv
+head -2 test.tsv 
+tail -2 test.tsv 
+tail -1 yeast_all_data.shuffled.tsv
+tail -n+2401 yeast_all_data.shuffled.tsv | head -87 | cat <(head -1 yeast_all_data.tsv) - >test.tsv
+tail -2 test.tsv 
+less test.tsv
+tail -n+2401 yeast_all_data.shuffled.tsv | head -88 | cat <(head -1 yeast_all_data.tsv) - >test.tsv
+grep YMR296C test.tsv 
+grep YMR296C yeast_all_data.shuffled.tsv
+les yeast_all_data.shuffled.tsv
+tail -n+2401 yeast_all_data.shuffled.tsv | head -187 | cat <(head -1 yeast_all_data.tsv) - >test.tsv
+tail -2 test.tsv 
+head -2200 yeast_all_data.shuffled.tsv | cat <(head -1 yeast_all_data.tsv) - >train.tsv
+tail -n+2201 yeast_all_data.shuffled.tsv | head -200 | cat <(head -1 yeast_all_data.tsv) - >dev.tsv
+wc -l *tsv
+calc 2200+200+185
+tail -1 *tsv
+tail -n1 *tsv
+grep -A2 YML108W yeast_all_data.shuffled.tsv
+head -2 *.tsv 
+grep -A2 YJL079C yeast_all_data.shuffled.tsv
 python
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer | grep 23
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer
-srk80 
-. ~/.bashrc 
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer
-cp transformer_expression_prediction_8gb.gin transformer_cage10_8gb.bin
-python -m tensor2tensor.trax.trainer --config_file=transformer_cage10_8gb.gin --output_dir=~/t2t_train/genomics_expression_cage10/trax_transformer
-mv transformer_cage10_8gb.bin transformer_cage10_8gb.gin 
-python -m tensor2tensor.trax.trainer --config_file=transformer_cage10_8gb.gin --output_dir=~/t2t_train/genomics_expression_cage10/trax_transformer
-mv transformer_cage10_8gb.bin transformer_cage10_8gb.gin
-python -m tensor2tensor.trax.trainer --config_file=transformer_cage10_8gb.gin --output_dir=~/t2t_train/genomics_expression_cage10/trax_transformer
-python -m tensor2tensor.trax.trainer --config_file=/home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/configs/transformer_imdb_8gb.gin --output_dir=~/t2t_train/sentiment_imdb/trax 
-python -m tensor2tensor.trax.trainer --config_file=/home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/configs/transformer_imdb_8gb.gin --output_dir=~/t2t_train/sentiment_imdb/trax2
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer
-find ~/tf1.14/src/tensor2tensor -name '*py' -exec grep -H -e rainer_class {} \;
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer
-python -m tensor2tensor.trax.trainer --config_file=/home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/configs/transformer_imdb_8gb.gin --output_dir=~/t2t_train/sentiment_imdb/trax3
-find ~/tf1.14/src/tensor2tensor -name '*py' -exec grep -H -e stax {} \;
-find ~/tf1.14/src/tensor2tensor -name '*py' -exec grep -H -e jax {} \;
-find ~/tf1.14/src/tensor2tensor -name '*py' -exec grep -H -e stax {} \;
-python -m tensor2tensor.trax.trainer --config_file=/home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/configs/transformer_imdb_8gb.gin --output_dir=~/t2t_train/sentiment_imdb/trax3
-find ~/tf1.14/src/tensor2tensor -name '*py' -exec grep -H -e config {} \;
-find ~/tf1.14/src/tensor2tensor -name '*py' -exec grep -H -e gin.config {} \;
-python -m tensor2tensor.trax.trainer --config_file=/home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/configs/transformer_imdb_8gb.gin --output_dir=~/t2t_train/sentiment_imdb/trax3
-python -m tensor2tensor.trax.trainer --config_file=/home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/configs/transformer_imdb_8gb.gin --output_dir=~/t2t_train/sentiment_imdb/trax4
-python -m tensor2tensor.trax.trainer --config_file=transformer_imdb_8gb.gin --output_dir=~/t2t_train/sentiment_imdb/trax4
-python -m tensor2tensor.trax.trainer --config_file=transformer_imdb_8gb.gin --output_dir=~/t2t_train/sentiment_imdb/trax5
-find ~/tf1.14/src/tensor2tensor -name '*py' -exec grep -H -e gin.config {} \;
-less /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/trax.py
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer2
-find models/ -name '*py' -exec grep -H neg_log_perplex {} \;
-find ~/tf1.14/src/tensor2tensor/ -name '*py' -exec grep -H neg_log_perplex {} \;
-find ~/tf1.14/src/tensor2tensor/ -name '*py' -exec grep -H squared_error {} \;
-python
-python ~/tf1.14/lib/python3.6/site-packages/tensor2tensor/trax/trax_test.py 
-. ~/.bashrc 
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer3
-tensorboard --logdir=/home/vagar/t2t_train/expression_level_predict_pca/trax_transformer3
-tensorboard --logdir=/home/vagar/t2t_train/expression_level_predict_pca/trax_transformer3
-rm -r /home/vagar/t2t_train/expression_level_predict_pca/trax_transformer*
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer2
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer3
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer4
-python -m tensor2tensor.trax.trainer --config_file=transformer_imdb_8gb.gin --output_dir=~/t2t_train/sentiment_imdb/trax6
-python -m tensor2tensor.trax.trainer --config_file=transformer_imdb_8gb.gin --output_dir=~/t2t_train/sentiment_imdb/trax7
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H print {} \;
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H -e 'print(' {} \;
-python -m tensor2tensor.trax.trainer --config_file=transformer_imdb_8gb.gin --output_dir=~/t2t_train/sentiment_imdb/trax7
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H check_shape {} \;
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H check_shape_agree {} \;
-python /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/models/transformer_test.py 
-python
-python /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/models/transformer_test.py 
-python /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/layers/convolution_test.py
-python /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/models/transformer_test.py 
-python /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/layers/convolution_test.py
-python /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/models/transformer_test.py 
-python /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/layers/convolution_test.py
-python /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/models/transformer_test.py 
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H Drop {} \;
-python /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/models/transformer_test.py 
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H Residual {} \;
-python /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/models/transformer_test.py 
-srk80 
-lh prepared_data/
-hgrep jax
-hgrep jax
-ls tretest_gene/
-cat tretest_gene.
-cat tretest_gene.sb 
-cat acc.txt 
-less acc.txt 
-cat tretest_gene.sb 
-python
-less tretest_gene.err 
-less tretest_gene.out 
-cat tretest_gene.sb 
-ls ..
-cat params_gene.json 
-cat model_best.h5 
-cat params_seq.json 
-cat retest_seq.sb 
-cat sequences.bed 
-less sequences.bed 
-wc -l sequences.bed 
-wc -l sequences.bed
-grep test sequences.bed | wc -l
-lh tfrecords
-lh tfrecords/
-ls tretest_gene/
-less tretest_gene/tretest_gene.err 
-less sequences.bed 
-cat tretest_gene/tretest_gene.sb 
-lh tretest_gene/
-less /home/drk/seqnn/data/expecto/genes_test.csv 
-wc -l /home/drk/seqnn/data/expecto/genes_test.csv 
-lh ../
-less /home/drk/seqnn/data/expecto/genes_test.csv 
-cat tretest_gene.sb 
-ln -s /home/drk/seqnn/data/expecto/genes_test.csv 
-ln -s /home/drk/seqnn/data/expecto/genes_train.csv 
-ln -s /home/drk/seqnn/data/expecto/genes_valid.csv 
-less genes_test.csv 
-wc -l genes_test.csv 
-python
-les genes_test.csv 
-less ~/predict_expression/57epigenomes.RPKM.pc 
-lh ~/predict_expression/57epigenomes.RPKM.pc 
-less ~/predict_expression/57epigenomes.RPKM.pc 
-less genes_test.csv 
-find ~/ -name '*ipynb'
-jupyter /home/vagar/google-drive/BiBloSA/xpresso2.ipynb
-jupyter notebook /home/vagar/google-drive/BiBloSA/xpresso2.ipynb
-mv /home/vagar/google-drive/BiBloSA/ .
-fg 2
-ls BiBloSA/
-rm -r BiBloSA/
-mv /home/vagar/google-drive/BiBloSA/basenji_vs_RNAseq.ipynb .
-jupyter notebook basenji_vs_RNAseq.ipynb 
-less genes_test.csv 
-grep protein genes_test.csv | wc -l
-cp ~/predict_expression/57epigenomes.RPKM.pc .
-less 57epigenomes.RPKM.pc 
-less acc.txt 
-cat tretest_gene.sb 
-find /home/drk/seqnn/analysis/7-1/ -name "*.h5"
-less acc.txt 
-less tretest_gene.err 
-less tretest_gene.out 
-cat tretest_gene.sb 
-less ~/software/basenji/bin/basenji_test.py 
-find ~/software/basenji/ -name 'seqnn*'
-less /home/vagar/software/basenji/basenji/seqnn.py
-less /home/vagar/software/basenji/basenji/metrics.py 
-less ~/software/basenji/bin/basenji_test.py 
-srk80 
-. ~/.bashrc 
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer4
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer5
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H initialize {} \;
-python /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/models/transformer_test.py 
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer5
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/configs/ -name '*py' -exec grep -H input_name {} \;
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/configs/ -name '*' -exec grep -H input_name {} \;
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer5
-python /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/models/transformer_test.py 
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer5
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H mask {} \;
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer5
-python /home/vagar/tf1.14/src/tensor2tensor/tensor2tensor/trax/models/transformer_test.py 
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer5
-echo $HOSTNAME
-tensorboard --logdir=/home/vagar/t2t_train/expression_level_predict_pca/trax_transformer6
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer5
-srp100
-. ~/.bashrc 
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer5
-nvidia-smi
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer5
-echo $HOSTNAME
-rm model.pkl 
-less predExpr.err 
-rm -r ../t2t_train/expression_level_predict_pca/trax_transformer
-rm -r ../t2t_train/expression_level_predict_pca/trax_transformer2/
-rm -r ../t2t_train/expression_level_predict_pca/trax_transformer3/
-rm -r ../t2t_train/expression_level_predict_pca/trax_transformer4/
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer5 &
-cat ../basenji_test/tretest_gene/tretest_gene.sb 
-find ~/software/basenji -name '*py' -exec grep -H test_tfr {} \;
-less /home/vagar/software/basenji/basenji/seqnn_util.py
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H predict {} \;
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H predict {} \; | less
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H dev {} \; | less
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H dev {} \; | grep -v device | less
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/ -name '*py' -exec grep -H dev {} \; | grep -v device | less
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/ -name '*py' -exec grep -H dev {} \; | grep -v device | grep -v ddev | less
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H test {} \; | less
-cat tretest_gene.sb 
-cat ~/basenji_test/tretest_gene.sb 
-cat ~/basenji_test/tretest_gene/tretest_gene.sb 
-find ~/tf1.14/src/tensor2tensor/ -name '*py' -exec grep -H eval_stream {} \;
-find ~/software/basenji/ -name 'ModeKeys'
-find ~/software/basenji/ -name 'Keys'
-find ~/software/basenji/ -name '*py' -exec grep -H ModeKeys {} \; | less
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H ModeKeys {} \; | less
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/ -name '*py' -exec grep -H ModeKeys {} \; | less
-find ~/software/basenji/ -name '*py' -exec grep -H ModeKeys {} \; | less
-find ~/software/basenji/ -name '*py' -exec grep -H PREDICT {} \; | less
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/ -name '*py' -exec grep -H PREDICT {} \; | less
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/ -name '*py' -exec grep -H dataset {} \; | less
-cat ../basenji_test/tretest_gene/tretest_gene.sb 
-less ~/t2t_train/expression_level_predict_pca/trax_transformer5/backward.txt 
-lh ~/t2t_train/expression_level_predict_pca/trax_transformer5/
-less ~/t2t_train/expression_level_predict_pca/trax_transformer5/config.gin 
-less ~/t2t_train/expression_level_predict_pca/trax_transformer5/forward.dot 
-less ~/t2t_train/expression_level_predict_pca/trax_transformer5/forward.txt 
-less ~/t2t_train/expression_level_predict_pca/trax_transformer5/train/
-tensorflow_model_server --port=8500 --model_base_path=path/to/model
-tensorflow_model_server --port=8500 --model_base_path=~/t2t_train/expression_level_predict_pca/trax_transformer5/
-python
-cp trax_transformer_train.py trax_transformer_predict.py
-ls prepared_data/
-python trax_transformer_predict.py 
-srp100
-. ~/.bashrc 
-python trax_transformer_predict.py 
-ln -s ~/t2t_train/expression_level_predict_pca/trax_transformer5/model.pkl .
-python trax_transformer_predict.py 
+python run_regression.py --help
+python run_regression.py --albert_config_file albert_config.json --data_dir yeast3UTR --do_eval --do_lower_case --do_predict --do_train --output_dir yeast3utrFineTuned --spm_model_file yeast3UTR/yeast.model --task_name yeast --vocab_file yeast3UTR/yeast.stripped.vocab --init_checkpoint yeast3utrModel/model.ckpt-10000.index 
+calc 93*2
+srun --pty --partition=gpu24 --gres=gpu:titanrtx:1 --mem=50g -t 8:00:00 /bin/bash -l
+lh yeast3utrFineTuned/
+tensorboard yeast3utrFineTuned/
+tensorboard --logdir yeast3utrFineTuned --host localhost --port 2223
+lh yeast3utrFineTuned/
+tensorboard --logdir yeast3utrFineTuned2 --host localhost --port 2223
+python run_regression.py --albert_config_file albert_config.json --data_dir yeast3UTR --do_eval --do_lower_case --do_predict --do_train --output_dir yeast3utrFineTuned --spm_model_file yeast3UTR/yeast.model --task_name yeast --vocab_file yeast3UTR/yeast.stripped.vocab --init_checkpoint yeast3utrModel/model.ckpt-10000
+nvidia-smi 
+lh yeast3utrFineTuned/
+ls yeast3utrFineTuned/
+less yeast3utrFineTuned/eval_results.txt 
+python run_regression.py --albert_config_file albert_config.json --data_dir yeast3UTR --do_eval --do_lower_case --do_predict --do_train --output_dir yeast3utrFineTuned --spm_model_file yeast3UTR/yeast.model --task_name yeast --vocab_file yeast3UTR/yeast.stripped.vocab --init_checkpoint yeast3utrModel/model.ckpt-10000
+lh yeast3utrFineTuned/
+ls yeast3utrFineTuned/
+less yeast3utrFineTuned/test_results.tsv 
+less yeast3utrFineTuned/eval_results.tsv 
+less yeast3utrFineTuned/eval_results.txt 
+wc -l yeast3utrFineTuned/test_results.tsv 
+less yeast3utrFineTuned/submit_results.tsv 
 R
-tensorboard --logdir=/home/vagar/t2t_train/expression_level_predict_pca/trax_transformer5
-python trax_transformer_predict.py 
+python run_regression.py --help
+python run_regression.py --albert_config_file albert_config.json --data_dir yeast3UTR --do_eval --do_lower_case --do_predict --do_train --output_dir yeast3utrFineTuned --spm_model_file yeast3UTR/yeast.model --task_name yeast --vocab_file yeast3UTR/yeast.stripped.vocab --init_checkpoint yeast3utrModel/model.ckpt-10000 
+python run_regression.py --albert_config_file albert_config.json --data_dir yeast3UTR --do_eval --do_lower_case --do_predict --do_train --output_dir yeast3utrFineTuned --spm_model_file yeast3UTR/yeast.model --task_name yeast --vocab_file yeast3UTR/yeast.stripped.vocab --init_checkpoint yeast3utrModel/model.ckpt-10000 --train_step 10000 --eval_batch_size 32
+python run_regression.py --albert_config_file albert_config.json --data_dir yeast3UTR --do_eval --do_lower_case --do_predict --do_train --output_dir yeast3utrFineTuned2 --spm_model_file yeast3UTR/yeast.model --task_name yeast --vocab_file yeast3UTR/yeast.stripped.vocab --init_checkpoint yeast3utrModel/model.ckpt-10000 --train_step 10000 --eval_batch_size 32
+python run_regression.py --albert_config_file albert_config.json --data_dir yeast3UTR --do_eval --do_lower_case --do_predict --do_train --output_dir yeast3utrFineTuned2 --spm_model_file yeast3UTR/yeast.model --task_name yeast --vocab_file yeast3UTR/yeast.stripped.vocab --init_checkpoint yeast3utrModel/model.ckpt-10000 --train_step 1000 --eval_batch_size 32
+R
+python run_regression.py --help
+R
+python run_regression.py --help
+less yeast3utrFineTuned2/test_results.tsv
 python
-python trax_transformer_predict.py 
-python
-python trax_transformer_predict.py 
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/ -name '*py' -exec grep -H eval {} \; | less
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H eval {} \; | less
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/configs/ -name '*py' -exec grep -H eval {} \; | less
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/configs/ -name '*py' -exec grep -H EVAL {} \; | less
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/configs/ -name '*py' -exec grep -H mode {} \; | less
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/configs/ -name '*' -exec grep -H mode {} \; | less
-srk80 
-srp100
-srk80 
-less ~/.bashrc 
+n
+srun --pty --partition=gpu24 --gres=gpu:titanrtx:1 --mem=20g -t 8:00:00 /bin/bash -l
+lh yeast3UTR*
+lh yeast3utrFineTuned*
+lh yeast3UTR
+less ../../yeastorfs.fa 
+unjustify_fasta.pl yeastorfs.fa 
+mv yeastorfs.fa.prepared yeastorfs.fa
+less yeastorfs.fa 
+hgrep yeast3utr.lengths.txt
+hgrep yeast3utr.txt
+awk 'NR % 2==0 {print}' yeastorfs.fa >yeastorfs.txt
+less yeastorfs.txt 
+awk '{print length($0);}' yeastorfs.txt >yeastorfs.lengths.txt
+R
+spm_train --input=yeastorfs.txt --model_prefix=yeastORF --vocab_size=5 -bos_id=-1 --eos_id=-1 --unk_id=4 --character_coverage=1 --model_type=char
+cat yeastORF.vocab yeast.vocab
+cat yeast.stripped.vocab
+cat yeastORF.vocab
+less yeastORF.model
+spm_encode --model=yeastORF.model --output_format=piece <yeastorfs.txt | perl -ne 'print substr($_,4)."\n";' >yeastorfs.encoded.txt 
+less yeastorfs.encoded.txt 
+spm_encode --model=yeastORF.model --output_format=piece <yeastorfs.txt | less
+less yeastorfs.encoded.txt 
+spm_encode --model=yeastORF.model --output_format=piece <yeastorfs.txt | less
+less yeastorfs.encoded.txt 
+srun --pty --partition=gpu24 --gres=gpu:titanrtx:1 --mem=50g -t 8:00:00 /bin/bash -l
+srun --pty --partition=gpu24 --gres=gpu:titanrtx:1 --mem=40g -t 8:00:00 /bin/bash -l
+srun --pty --partition=gpu24 --gres=gpu:titanrtx:1 --mem=30g -t 8:00:00 /bin/bash -l
+time python create_pretraining_data.py --spm_model_file=yeastTest/yeastORF.model --input_file=yeastTest/yeastorfs.encoded.txt --output_file=yeastTest/yeastorfsWithSPM.tfrecord --short_seq_prob=0.8 --vocab_file=yeastTest/yeast.stripped.vocab --max_predictions_per_seq=50 --dupe_factor=100 --max_seq_length=2048 &
 . ~/.bashrc 
-python -m tensor2tensor.trax.trainer --config_file=transformer_expression_prediction_8gb.gin --output_dir=~/t2t_train/expression_level_predict_pca/trax_transformer5
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H cPicle {} \; | less
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H cPickle {} \; | less
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H cPickle {} \;
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H pkl {} \;
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H params_file {} \;
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H evaluate_train {} \;
-python trax_transformer_predict.py 
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/ -name '*py' -exec grep -H model_predict {} \;
-python trax_transformer_predict.py 
-ython trax_transformer_predict.p
-python trax_transformer_predict.py 
-srgtx 
-ls prepared_data/
+mv yeast3UTR yeastTest
+time python create_pretraining_data.py --spm_model_file=yeastTest/yeastORF.model --input_file=yeastTest/yeastorfs.encoded.txt --output_file=yeastTest/yeastorfsWithSPM.tfrecord --short_seq_prob=0.8 --vocab_file=yeastTest/yeast.stripped.vocab --max_predictions_per_seq=50 --dupe_factor=100 --max_seq_length=2048 &
+rm yeastTest/yeastorfsWithSPM.tfrecord 
 echo $HOSTNAME
-srk80 
-. ~/.bashrc 
-python ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/trax_test.py 
+time python create_pretraining_data.py --spm_model_file=yeastTest/yeastORF.model --input_file=yeastTest/yeastorfs.encoded.txt --output_file=yeastTest/yeastorfsWithSPM.tfrecord --short_seq_prob=0.8 --vocab_file=yeastTest/yeast.stripped.vocab --max_predictions_per_seq=100 --dupe_factor=100 --max_seq_length=2048
+wc -l yeastorfs.txt
+less yeastorfs.
+less yeastorfs.txt 
+leass yeastorfs.fa 
+less yeastorfs.fa 
+awk 'NR % 2==1 {print}' yeastorfs.fa | perl -ne '($id, $chr, $start, $stop, $str) = ($_ =~ /(Y.*)\_SC.*(chr\w+):(\d+)-(\d+).*strand=(.)/); print join("\t", $chr, $start, $stop, $id,".",$str)."\n"; ' >yeastorfs.bed
+less yeastorfs.
+less yeastorfs.bed 
+awk 'NR % 2==1 {print}' <yeastorfs.fa | perl -ne '($id, $chr, $start, $stop, $str) = ($_ =~ /(Y.*)\_SC.*(chr\w+):(\d+)-(\d+).*strand=(.)/); print join("\t", $chr, $start, $stop, $id,".",$str)."\n"; ' >yeastorfs.bed
+less yeastorfs.bed 
+less yeastorfs.fa 
+awk 'NR % 2==1 {print}' <yeastorfs.fa | perl -ne '($id, $chr, $start, $stop, $str) = ($_ =~ /(Y.*)\ .*(chr\w+):(\d+)-(\d+).*strand=(.)/); print join("\t", $chr, $start, $stop, $id,".",$str)."\n"; ' >yeastorfs.bed
+less yeastorfs.fa 
+less yeastorfs.bed 
+sort -k4,4 yeastorfs.bed | less
+less yeastorfs.bed 
+less yeastorfs.fa 
+awk 'NR % 2==1 {print}' <yeastorfs.fa | perl -ne '($id, $chr, $start, $stop, $str) = ($_ =~ /(Y|Q.*)\ .*(chr\w+):(\d+)-(\d+).*strand=(.)/); print join("\t", $chr, $start, $stop, $id,".",$str)."\n"; ' >yeastorfs.bed
+less yeastorfs.fa 
+less yeastorfs.bed 
+awk 'NR % 2==1 {print}' <yeastorfs.fa | perl -ne '($id, $chr, $start, $stop, $str) = ($_ =~ /([Y|Q].*)\ .*(chr\w+):(\d+)-(\d+).*strand=(.)/); print join("\t", $chr, $start, $stop, $id,".",$str)."\n"; ' >yeastorfs.bed
+less yeastorfs.bed 
+sort -k4,4 yeastorfs.bed | less
+wc -l yeastorfs.bed 
 echo $HOSTNAME
-python ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/trax_test.py 
-python trax_transformer_predict.py 
-lh model.pkl 
-lh /home/vagar/t2t_train/expression_level_predict_pca/trax_transformer5/model.pkl
-python trax_transformer_predict.py 
-srp100
-t2t-eval --t2t_usr_dir=/home/vagar/predict_expression/ --problem=expression_level_predict_pca --model=transformer_encoder  --hparams_set=transformer_gene  --output_dir=/home/vagar/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene --eval_use_test_set=True
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/ -name '*py' -exec grep -H transformer_gene {} \; | les2
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/ -name '*py' -exec grep -H transformer_gene {} \;
-find . -name '*py' -exec grep -H transformer_gene {} \;
-find ../ -name '*py' -exec grep -H transformer_gene {} \;
-. ~/.bashrc 
-t2t-eval --t2t_usr_dir=/home/vagar/predict_expression/ --problem=expression_level_predict_pca --model=transformer_encoder  --hparams_set=transformer_gene  --output_dir=/home/vagar/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene --eval_use_test_set=True
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/ -name '*py' -exec grep -H transformer_gene {} \;
-find ~/tf1.14/src/tensor2tensor/tensor2tensor/ -name '*py' -exec grep -H transformer_tiny {} \;
-grep gene *.py
-grep gene *.py | grep transf
-find ../tensor2tensor-old/ -name '*py' -exec grep -H transformer_tiny {} \;
-find ../tensor2tensor-old/ -name '*py' -exec grep -H transformer_gene {} \;
-atom ../tensor2tensor-old/models/transformer.py
-t2t-eval --t2t_usr_dir=/home/vagar/predict_expression/ --problem=expression_level_predict_pca --model=transformer_encoder  --hparams_set=transformer_gene  --output_dir=/home/vagar/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene --eval_use_test_set=True
-grep VA *.py
-t2t-eval --t2t_usr_dir=/home/vagar/predict_expression/ --problem=expression_level_predict_pca --model=transformer_encoder  --hparams_set=transformer_gene  --output_dir=/home/vagar/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene --eval_use_test_set=True
-hgrep data_dir
-ls ~/t2t_data/
-t2t-eval --t2t_usr_dir=/home/vagar/predict_expression/ --problem=expression_level_predict_pca --model=transformer_encoder  --hparams_set=transformer_gene  --output_dir=/home/vagar/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene --eval_use_test_set=True --data_dir=/home/vagar/predict_expression/prepared_data/
-python
-t2t-eval --t2t_usr_dir=/home/vagar/predict_expression/ --problem=expression_level_predict_pca --model=transformer_encoder  --hparams_set=transformer_gene  --output_dir=/home/vagar/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene --eval_use_test_set=True --data_dir=/home/vagar/predict_expression/prepared_data/
-srk80 
-echo $HOSTNAME
-. ~/.bashrc 
-t2t-eval --t2t_usr_dir=/home/vagar/predict_expression/ --problem=expression_level_predict_pca --model=transformer_encoder  --hparams_set=transformer_gene  --output_dir=/home/vagar/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene --eval_use_test_set=True --data_dir=/home/vagar/predict_expression/prepared_data/
-find ../tensor2tensor-old/ -name '*py' -exec grep -H CLASS_LABEL {} \;
-find ../tensor2tensor-old/ -name '*py' -exec grep -H beam_size {} \;
-find ../tensor2tensor-old/ -name '*py' -exec grep -H beam_size {} \; | grep 4
-find ../tensor2tensor-old/ -name '*py' -exec grep -H decoding {} \;
-find ../tensor2tensor-old/ -name '*py' -exec grep -H decoding {} \; | less
-find ../tensor2tensor-old/ -name '*py' -exec grep -H beam_size {} \; | grep 4
-find ../tensor2tensor-old/ -name '*py' -exec grep -H beam_size {} \; | less
-find ../tensor2tensor-old/ -name '*py' -exec grep -H beam_size {} \; | grep  -C4
-find ../tensor2tensor-old/ -name '*py' -exec grep -H beam_size {} \; | grep 4
-t2t-eval --t2t_usr_dir=/home/vagar/predict_expression/ --problem=expression_level_predict_pca --model=transformer_encoder  --hparams_set=transformer_gene  --output_dir=/home/vagar/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene --eval_use_test_set=True --data_dir=/home/vagar/predict_expression/prepared_data/
-find ../tensor2tensor-old/ -name '*py' -exec grep -H batch_prediction_key {} \; | less
-t2t-eval --t2t_usr_dir=/home/vagar/predict_expression/ --problem=expression_level_predict_pca --model=transformer_encoder  --hparams_set=transformer_gene  --output_dir=/home/vagar/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene --eval_use_test_set=True --data_dir=/home/vagar/predict_expression/prepared_data/
-ls prepared_data/
-ls /tmpdata/
-find ../tensor2tensor-old/ -name '*py' -exec grep -H decode_from_dataset {} \; | less
-t2t-eval --t2t_usr_dir=/home/vagar/predict_expression/ --problem=expression_level_predict_pca --model=transformer_encoder  --hparams_set=transformer_gene  --output_dir=/home/vagar/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene --eval_use_test_set=True --data_dir=/home/vagar/predict_expression/prepared_data/
-ls prepared_data/
-grep stack *.py
-less generate_training_sets.py 
-t2t-eval --t2t_usr_dir=/home/vagar/predict_expression/ --problem=expression_level_predict_pca --model=transformer_encoder  --hparams_set=transformer_gene  --output_dir=/home/vagar/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene --eval_use_test_set=True --data_dir=/home/vagar/predict_expression/prepared_data/
-ls p
-ls prepared_data/
-less generate_training_sets.py 
-t2t-eval --t2t_usr_dir=/home/vagar/predict_expression/ --problem=expression_level_predict_pca --model=transformer_encoder  --hparams_set=transformer_gene  --output_dir=/home/vagar/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene --eval_use_test_set=True --data_dir=/home/vagar/predict_expression/prepared_data/
-grep concat *py
-t2t-eval --t2t_usr_dir=/home/vagar/predict_expression/ --problem=expression_level_predict_pca --model=transformer_encoder  --hparams_set=transformer_gene  --output_dir=/home/vagar/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene --eval_use_test_set=True --data_dir=/home/vagar/predict_expression/prepared_data/
-python
-t2t-eval --t2t_usr_dir=/home/vagar/predict_expression/ --problem=expression_level_predict_pca --model=transformer_encoder  --hparams_set=transformer_gene  --output_dir=/home/vagar/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene --eval_use_test_set=True --data_dir=/home/vagar/predict_expression/prepared_data/
-ls prepared_data/model_preds.h5
-lh prepared_data/model_preds.h5
-rm prepared_data/model_preds.h5
-find ../tensor2tensor-old/ -name '*py' -exec grep -H estimator_spec_predict {} \;
-srk80 
-find ../ -name '*py' -exec grep -H estimator_model_fn {} \;
-find ../tf1.14/src/tensor2tensor/ -name '*py' -exec grep -H estimator_model_fn {} \;
-less /tmp/t2t_gene/
-lh /tmp/t2t_gene/
-rmdir /tmp/t2t_gene/
+python run_pretraining.py --output_dir yeastORFModel --do_train --do_eval --input_file yeastTest/yeastorfsWithSPM.tfrecord --albert_config_file albert_config.json --max_predictions_per_seq 100 --train_batch_size=32 --eval_batch_size=32 --max_seq_length=2048 
+python run_pretraining.py --output_dir yeastORFModel --do_train --do_eval --input_file yeastTest/yeastorfsWithSPM.tfrecord --albert_config_file albert_config.json --max_predictions_per_seq 100 --train_batch_size=32 --eval_batch_size=32 --max_seq_length 2048 
+python run_pretraining.py --output_dir yeastORFModel2 --do_train --do_eval --input_file yeastTest/yeastorfsWithSPM.tfrecord --albert_config_file albert_config.json --max_predictions_per_seq 100 --train_batch_size=32 --eval_batch_size=32 --max_seq_length=2048 
+python run_pretraining.py --output_dir yeastORFModel2 --do_train --do_eval --input_file yeastTest/yeastorfsWithSPM.tfrecord --albert_config_file albert_config.json --max_predictions_per_seq 100 --train_batch_size=32 --eval_batch_size=32 --max_seq_length=512
+python run_pretraining.py --output_dir yeastORFModel2 --do_train --do_eval --input_file yeastTest/yeastorfsWithSPM.tfrecord --albert_config_file albert_config.json --max_predictions_per_seq 50 --train_batch_size=32 --eval_batch_size=32 --max_seq_length=512
+python run_pretraining.py --output_dir yeastORFModel2 --do_train --do_eval --input_file yeastTest/yeastorfsWithSPM.tfrecord --albert_config_file albert_config.json --max_predictions_per_seq=100 --train_batch_size=32 --eval_batch_size=32 --max_seq_length=512
+python run_pretraining.py --output_dir yeastORFModel3 --do_train --do_eval --input_file yeastTest/yeastorfsWithSPM.tfrecord --albert_config_file albert_config.json --max_predictions_per_seq=100 --train_batch_size=32 --eval_batch_size=32 --max_seq_length=512
+rm -r yeastORFModel yeastORFModel2 yeastORFModel3
+python run_pretraining.py --output_dir yeastORFModel --do_train --do_eval --input_file yeastTest/yeastorfsWithSPM.tfrecord --albert_config_file albert_config.json --max_predictions_per_seq=100 --train_batch_size=32 --eval_batch_size=32 --max_seq_length=2048
+sudo systemctl restart nxserver
+srun --pty --partition=gpu24 --gres=gpu:titanrtx:1 --mem=20g -t 8:00:00 /bin/bash -l
+tensorboard --logdir yeastORFModel --host localhost --port 2223
+b g
+rm pnas.1817299116.sd05\ \(1\).tsv 
+less pnas.1817299116.sd01.tsv 
+wc -l pnas.1817299116.sd01.tsv 
+wc -l pnas.1817299116.sd02.tsv 
+less pnas.1817299116.sd02.tsv 
+rm pnas.1817299116.sd03.xlsx 
+less pnas.1817299116.sd04.tsv 
+wc -l pnas.1817299116.sd04.tsv 
+rm pnas.1817299116.sd05.tsv 
+rm pnas.1817299116.sd06.tsv 
+less pnas.1817299116.sd07.tsv 
+rm pnas.1817299116.sd07.tsv 
+less pnas.1817299116.sd08.tsv 
+rm pnas.1817299116.sd08.tsv 
+mkdir Riba_Zavolan_2019
+mv pnas.1817299116.sd0* Riba_Zavolan_2019/
+cat >README
+cat README 
+less Riba_Zavolan_2019/pnas.1817299116.sd0
+head -1 Riba_Zavolan_2019/pnas.1817299116.sd01.tsv 
+python run_pretraining.py --output_dir yeastORFModel --do_train --do_eval --input_file yeastTest/yeastorfsWithSPM.tfrecord --albert_config_file albert_config.json --max_predictions_per_seq=100 --train_batch_size=32 --eval_batch_size=32 --max_seq_length=2048
+python run_pretraining.py --output_dir yeastORFModel --do_train --do_eval --input_file yeastTest/yeastorfsWithSPM.tfrecord --albert_config_file albert_config.json --max_predictions_per_seq=100 --train_batch_size=8 --eval_batch_size=32 --max_seq_length=2048
+python run_pretraining.py --output_dir yeastORFModel --do_train --do_eval --input_file yeastTest/yeastorfsWithSPM.tfrecord --albert_config_file albert_config.json --max_predictions_per_seq=100 --train_batch_size=16 --eval_batch_size=32 --max_seq_length=2048
+python run_pretraining.py --output_dir yeastORFModel --do_train --do_eval --input_file yeastTest/yeastorfsWithSPM.tfrecord --albert_config_file albert_config.json --max_predictions_per_seq=100 --train_batch_size=16 --eval_batch_size=16 --max_seq_length=2048
+python run_pretraining.py --output_dir yeastORFModel --do_train --do_eval --input_file yeastTest/yeastorfsWithSPM.tfrecord --albert_config_file albert_config.json --max_predictions_per_seq=100 --train_batch_size=8 --eval_batch_size=128 --max_seq_length=2048
+srun --pty --partition=gpu24 --gres=gpu:titanrtx:1 --mem=50g -t 8:00:00 /bin/bash -l
+ls yeastORFModel/
+lh yeastTest
+hgrep nexu
+grep ssh ~/.bashrc 
 less ~/.bashrc 
-python tf1.14/src/tensor2tensor/tensor2tensor/models/transformer.py 
-grep source ~/.bashrc 
-source ~/tf1.14/bin/activate
-python ~/tf1.14/src/tensor2tensor/tensor2tensor/models/transformer.py
-ls ../../bin/
-lh ~/tf1.14/bin/
-lh ~/tf1.14/bin/python
-python
-ls *.h5
-hgrep generate_training_sets.py 
-less generate_training_sets.py 
-hgrep datagen
-less ~/.bashrc 
-less ~/.bash_history 
-cp ~/.bash_history ~/.bash_history.bak
-srk80 
-srp100
-srgtx 
-t2t-datagen --problem=expression_level_predict_pca --data_dir=~/predict_expression/prepared_data/expr --tmp_dir=~/t2t_data/tmp
-less ~/tensor2tensor-old/bin/t2t_datagen.py 
-which t2t-datagen 
-less ~/tensor2tensor-old/bin/t2t_datagen.py 
-t2t-datagen --problem=expression_level_predict_pca --data_dir=/home/vagar/predict_expression/prepared_data/expr --tmp_dir=~/t2t_data/tmp
-less ~/tensor2tensor-old/bin/t2t_datagen.py 
-t2t-datagen --problem=expression_level_predict_pca --data_dir=/home/vagar/predict_expression/prepared_data/ --tmp_dir=~/t2t_data/tmp --t2t_usr_dir=/home/vagar/predict_expression/prepared_data/
-less ~/tensor2tensor-old/bin/t2t_datagen.py 
-less ~/tf1.14/src/tensor2tensor/tensor2tensor/bin/t2t_datagen.py 
-which t2t-datagen 
-less /home/vagar/tf1.14/bin/t2t-datagen
-t2t-datagen  --problem=expression_level_predict_pca --data_dir=/home/vagar/predict_expression/prepared_data/ --tmp_dir=~/t2t_data/tmp --t2t_usr_dir=/home/vagar/predict_expression/
-ls prepared_data/
-mkdir old_data
-mv old_data/ old_test
-mv *test* old_test/
-t2t-datagen  --problem=expression_level_predict_pca --data_dir=/home/vagar/predict_expression/prepared_data/ --tmp_dir=~/t2t_data/tmp --t2t_usr_dir=/home/vagar/predict_expression/
-ls prepared_data/
-for x in expression_level_predict_pca-unshuffled-test-0000*; do { echo $x; } done
-for x in expression_level_predict_pca-unshuffled-test-0000*; do { echo $x; `perl -e "$_ =~ s/unshuffled//; print $_;"`; } done
-for x in expression_level_predict_pca-unshuffled-test-0000*; do { echo $x; `perl -e "$_ = s/unshuffled//; print $_;"`; } done
-for x in expression_level_predict_pca-unshuffled-test-0000*; do { `perl -e "${x} =~ s/unshuffled//; print $_;"`; } done
-for x in expression_level_predict_pca-unshuffled-test-0000*; do { `echo $x | perl -e "$_ =~ s/unshuffled//; print $_;"`; } done
-echo ${hello/o/l}
-hello='hello'
-echo ${hello/o/l}
-for x in expression_level_predict_pca-unshuffled-test-0000*; do { echo ${x/unshuffled//; } done
-for x in expression_level_predict_pca-unshuffled-test-0000*; do { echo ${x/unshuffled//}; } done
-for x in expression_level_predict_pca-unshuffled-test-0000*; do { echo ${x/unshuffled-//}; } done
-for x in expression_level_predict_pca-unshuffled-test-0000*; do { echo ${x/unshuffled-/}; } done
-for x in expression_level_predict_pca-unshuffled-test-0000*; do { mv $x ${x/unshuffled-/}; } done
-lh prepared_data/old_test/
-t2t-datagen  --problem=expression_level_predict_pca --data_dir=/home/vagar/predict_expression/prepared_data/ --tmp_dir=~/t2t_data/tmp --t2t_usr_dir=/home/vagar/predict_expression/
-calc 1026049024
-calc 1026049024/1024
-calc 1026049024/1024/1024
-calc 1026049024/1024/1024/1024
-. ~/.bashrc 
-t2t-eval --t2t_usr_dir=/home/vagar/predict_expression/ --problem=expression_level_predict_pca --model=transformer_encoder  --hparams_set=transformer_gene  --output_dir=/home/vagar/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene --eval_use_test_set=True --data_dir=/home/vagar/predict_expression/prepared_data/
-lh prepared_data/
-python
-find ../tf1.14/src/tensor2tensor/ -name '*py' -exec grep -H er_gene {} \;
-find ../tf1.14/src/tensor2tensor/tensor2tensor/ -name '*py' -exec grep -H er_gene {} \;
-t2t-eval --t2t_usr_dir=/home/vagar/predict_expression/ --problem=expression_level_predict_pca --model=transformer_encoder  --hparams_set=transformer_gene  --output_dir=/home/vagar/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene --eval_use_test_set=True --data_dir=/home/vagar/predict_expression/prepared_data/
-srk80 
-git pull
-ls tretest_gene/
-cat tretest_gene_local.sb 
+sshfs vagar@nexus.gs.washington.edu:/net/shendure/ /home/vagar/UW2
+less yeastorfs.txt 
+hgrep yeastorfs.txt 
+hgrep yeastorfs.txt
+less yeastorfs.lengths.txt
+perl -ne 'print $_/3;' < yeastorfs.lengths.txt | less
+perl -ne 'print $_/3."\n";' < yeastorfs.lengths.txt | less
+perl -ne 'print ($_/3)."\n";' < yeastorfs.lengths.txt | less
+perl -ne 'chomp; print ($_/3)."\n";' < yeastorfs.lengths.txt | less
+perl -ne 'chomp; print $_/3; print "\n";' < yeastorfs.lengths.txt | less
+perl 'chomp; for ($i=0; $i < length($i); $i+=3){ print $_[$i..($i+3)]." "; } print "\n";' <yeastorfs.txt | less
+perl 'chomp; for($i=0; $i < length($i); $i+=3){ print substr($_,$i,$i+3)." "; } print "\n";' <yeastorfs.txt | less
+perl 'chomp; for($i=0; $i < length($_); $i+=3){ print substr($_,$i,$i+3)." "; } print "\n";' <yeastorfs.txt | less
+perl 'chomp; for($i=0; $i < length($_); $i+=3; ){ print substr($_,$i,$i+3)." "; } print "\n";' <yeastorfs.txt | less
+perl -ne 'chomp; for($i=0; $i < length($_); $i+=3; ){ print substr($_,$i,$i+3)." "; } print "\n";' <yeastorfs.txt | less
+perl -ne 'chomp; for($i=0; $i < length($_)-3; $i+=3; ){ print substr($_,$i,3)." "; } print "\n";' <yeastorfs.txt | less
+perl -ne 'chomp; for($i=0; $i < length($_)-3; $i+=3){ print substr($_,$i,3)." "; } print "\n";' <yeastorfs.txt | less
+perl -ne 'chomp; for($i=0; $i < length($_); $i+=3){ print substr($_,$i,3)." "; } print "\n";' <yeastorfs.txt | less
+perl -ne 'chomp; for($i=0; $i < length($_); $i+=3){ print substr($_,$i,3)." "; } print "zz\n";' <yeastorfs.txt | less
+perl -ne 'chomp; for($i=0; $i < length($_)-3; $i+=3){ print substr($_,$i,3)." "; } print substr($_,$i,3)."\n";' <yeastorfs.txt | less
+perl -ne 'chomp; for($i=0; $i < length($_)-3; $i+=3){ print substr($_,$i,3)." "; } print substr($_,$i,3)."zz\n";' <yeastorfs.txt | less
+perl -ne 'chomp; for($i=0; $i < length($_)-3; $i+=3){ print substr($_,$i,3)." "; } print substr($_,$i,3)."\n";' <yeastorfs.txt | less
+perl -ne 'chomp; for($i=0; $i < length($_)-3; $i+=3){ print substr($_,$i,3)." "; } print substr($_,$i,3)."\n\n";' <yeastorfs.txt | less
+perl -ne 'chomp; for($i=0; $i < length($_)-3; $i+=3){ print substr($_,$i,3)." "; } print substr($_,$i,3)."\n\n";' <yeastorfs.txt >yeastorfs.codons.encoded.txt 
+less yeastorfs.encoded.txt
+less yeastorfs.codons.encoded.txt
+less yeastorfs.txt 
+perl -ne 'chomp; for($i=0; $i < length($_)-3; $i+=3){ print substr($_,$i,3)." "; } print substr($_,$i,3)."\n\n";' <yeastorfs.txt >yeastorfs.codons.txt 
+less yeastorfs.codons.txt 
+perl -ne 'chomp; for($i=0; $i < length($_)-3; $i+=3){ print substr($_,$i,3)." "; } print substr($_,$i,3)."\n";' <yeastorfs.txt >yeastorfs.codons.txt 
+less yeastorfs.codons.txt 
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=66 -bos_id=-1 --eos_id=-1 --unk_id=4 --character_coverage=1
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=68 -bos_id=-1 --eos_id=-1 --unk_id=4 --character_coverage=1
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=100 -bos_id=-1 --eos_id=-1 --unk_id=4 --character_coverage=1
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=68 -bos_id=0--eos_id=-1 --unk_id=4 --character_coverage=1
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon
+less yeastorfs.codons.txt
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=66 -bos_id=-1 --eos_id=-1 --unk_id=4 --character_coverage=1 --max_sentence_length=6000
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=66 -bos_id=-1 --eos_id=-1 --unk_id=4 --character_coverage=1 --max_sentence_length=8000
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=66 -bos_id=-1 --eos_id=-1 --unk_id=4 --character_coverage=1 --max_sentence_length=10000
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=66 -bos_id=-1 --eos_id=-1 --unk_id=4 --character_coverage=1 --max_sentence_length=20000
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=66 -bos_id=-1 --eos_id=-1 --unk_id=4 --character_coverage=1 --max_sentence_length=20000 --input_sentence_size=7000
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=66 -bos_id=-1 --eos_id=-1 --unk_id=4 --character_coverage=1 --max_sentence_length=20000 --input_sentence_size=6692
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=64 -bos_id=-1 --eos_id=-1 --unk_id=4 --character_coverage=1 --max_sentence_length=20000 
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=63 -bos_id=-1 --eos_id=-1 --unk_id=4 --character_coverage=1 --max_sentence_length=20000 
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=65 -bos_id=-1 --eos_id=-1 --unk_id=4 --character_coverage=1 --max_sentence_length=20000 --hard_vocab_limit=false
+less yeastORFwCodon.vocab
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=65 --eos_id=-1 --unk_id=4 --character_coverage=1 --max_sentence_length=20000 --hard_vocab_limit=false
+cat yeastORF.vocab
+cat yeastORFwCodon.vocab 
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=65 --eos_id=-1 --unk_id=4 --character_coverage=1 --max_sentence_length=20000 --hard_vocab_limit=false --model_type=char
+cat yeastORFwCodon.vocab 
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=65 --eos_id=-1 --unk_id=4 --character_coverage=1 --max_sentence_length=20000 --hard_vocab_limit=false --model_type=word
+cat yeastORFwCodon.vocab 
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=66 --bos_id=-1 --eos_id=-1 --unk_id=4 --character_coverage=1 --max_sentence_length=20000 --hard_vocab_limit=false --model_type=word
+less yeastORFwCodon.vocab
+les yeastORFwCodon.vocab
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=66 --bos_id=-1 --eos_id=-1 --unk_id=4 --character_coverage=1 --max_sentence_length=20000 --model_type=word
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=70 --bos_id=-1 --eos_id=-1 --unk_id=4 --character_coverage=1 --max_sentence_length=20000 --model_type=word
+spm_train --input=yeastorfs.codons.txt --model_prefix=yeastORFwCodon --vocab_size=66 --bos_id=-1 --eos_id=-1 --unk_id=4 --character_coverage=1 --max_sentence_length=20000 --hard_vocab_limit=false --model_type=word
+ssh nexus.gs.washington.edu
+hgrep vagar
+ssh vagar@nexus.gs.washington.edu
+ssh vagar@nexus.gs.washington.edu
+mkdir Weinberg_2016
+less weinberg_synthesis.txt 
+R
+less dev.tsv 
+hgrep test.tsv
+mv yeast_all_data.* test.tsv train.tsv dev.tsv Manuscript_Cheng_RNA_2017/
+mkdir yeast3utr
+mv yeast3utr* yeast3utr/
+mkdir yeast.* yeast3utr/
+mv yeast.* yeast3utr/
+mkdir yeastorfs
+mv yeastorfs* yeastorfs/
+mv yeastORF* yeastorfs/
+less SGD_all_ORFs_3prime_UTRs.bed
+less SGD_all_ORFs_3prime_UTRs.fsa
+less SGD_all_ORFs_3prime_UTRs.uniq.bed
+mv SGD_all_ORFs_3prime_UTRs.* Manuscript_Cheng_RNA_2017/
+less README 
+cat README 
+mv README Manuscript_Cheng_RNA_2017/
 ls ../
-mv tretest_gene_local.sb ../
-nano tretest_gene_local.sb 
-ls tretest_gene
-sbatch tretest_gene_local.sb 
-squeue 
-squeue | grep vagar
-cat tretest_gene_local.sb 
-squeue | grep vagar
-python
-python printrecord.py 
-ssh vagar@nexus.washington.edu
-python
-sshfs vagar@nexus.gs.washington.edu
-sudo apt-get install sshfs
-sshfs vagar@nexus.gs.washington.edu /home/vagar
-sshfs vagar@nexus.gs.washington.edu:/net/shendure/vol1/home/vagar/projects/ /home/vagar
-sshfs vagar@nexus.gs.washington.edu:/net/shendure/vol1/home/vagar/projects/ /home/vagar/UW
-mkdir /home/vagar/UW
-sshfs vagar@nexus.gs.washington.edu:/net/shendure/vol1/home/vagar/projects/ /home/vagar/UW
-sshfs vagar@nexus.gs.washington.edu:/net/shendure/ /home/vagar/UW
-fusermount -u /home/vagar/UW
-sshfs vagar@nexus.gs.washington.edu:/net/shendure/ /home/vagar/UW
-ssh vagar@nexus.gs.washington.edu
-gedit &
+less ../sentencepiece/sentencepiece.pc.in 
+ls ../../
+ls Riba_Zavolan_2019/
+ls Riba_Zavolan_2019/pnas.1817299116.sd01.tsv 
+less Riba_Zavolan_2019/pnas.1817299116.sd01.tsv 
+rm -r Riba_Zavolan_2019/
+ls Manuscript_Cheng_RNA_2017/
+mkdir half_life
+mv dev.tsv SGD_all_ORFs_3prime_UTRs.* yeast_all_data.* train.tsv test.tsv ../half_life/
+less README
+mv README ../half_life/
+ls half_life/
+less half_life/dev.tsv 
+l
+mkdir with3utr
+ls dev.tsv train.tsv test.tsv with3utr/
+mv dev.tsv train.tsv test.tsv with3utr/
+mkdir withORF
+less yeast_all_data.shuffled.tsv 
+ls ../
+less SGD_all_ORFs_3prime_UTRs.bed 
+lh ../yeast3utr/
+mv SGD_all_ORFs_3prime_UTRs.* ../yeast3utr/
+less yeast_all_data.tsv 
+wc -l yeast_all_data.tsv 
+hgrep yeast_all_data.tsv 
+less Manuscript_Cheng_RNA_2017/.Rhistory 
+head -2 yeast_all_data.tsv 
+less yeast_all_data.shuffled.tsv 
+ls with3utr/
+mv with3utr/* ../yeast3utr/
+rmdir with3utr/
+mv yeast_all_data.* README ../yeast3utr/
+ls withORF/
+rmdir withORF/
+rm -r half_life/
+ls yeastorfs/
+ls yeast3utr/
+ls yeastorfs/
+less ../yeast3utr/train.tsv 
+less yeastorfs.codons.encoded.txt 
+less yeastorfs.codons.txt 
+less yeastorfs.encoded.txt 
+less yeastorfs.txt 
+less yeastorfs.fa 
+hgrep yeastorfs.fa
+hgrep perl | tail -20
+less yeastorfs.bed 
+cut -f 4 yeastorfs.bed | less
+cut -f 4 yeastorfs.bed | paste - yeastorfs.txt | less
+cut -f 4 yeastorfs.bed | paste - yeastorfs.txt >yeastorfs.withIDs.txt 
+less yeastorfs.withIDs.txt 
+ln -s ../yeast3utr/dev.tsv 
+ln -s ../yeast3utr/test.tsv 
+ln -s ../yeast3utr/train.tsv 
+less dev.tsv 
+perl -ne '@a=split /\t/; print $a[0],"\n";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; print $a[0],"\n"; $line=`grep $a[0] yeastorfs.withIDs.txt`; print $line;' <dev.tsv | head -2
+perl -ne '@a=split /\t/; print $a[0],"\n"; $line=`grep \$a[0] yeastorfs.withIDs.txt`; print $line;' <dev.tsv | head -2
+cut -f 4 yeastorfs.bed | paste - yeastorfs.codons.txt >yeastorfs.withIDs.txt 
+less yeastorfs.withIDs.txt
+perl -ne '@a=split /\t/; print $a[0],"\n"; $line=`grep \$a[0] yeastorfs.withIDs.txt`; print $line;' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; print join("\t", $a[0], $line, @a[2..-1])."\n"; if $line eq "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; print join("\t", $a[0], $line, $@a[2..-1])."\n"; if $line eq "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; print join("\t", $a[0], $line, $a[2..-1])."\n"; if $line eq "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; print join("\t", $a[0], $line, $a[2..$#a])."\n"; if $line eq "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; print join("\t", $a[0], $line, $a[2..$#a])."\n" if $line eq "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; print join("\t", $a[0], $line, $a[1..$#a])."\n" if $line eq "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; print join("\t", $a[0], $line, @a[1..$#a])."\n" if $line eq "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; print join("\t", $a[0], $line, @a[1..$#a])."\n" if $line ne "";' <dev.tsv | head -2
+less dev.tsv 
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; print join("\t", $a[0], $line, @a[1..$#a])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; print join("\t", $a[0], $line, $a[1..$#a])."\n" if $line ne "";' <dev.tsv | head -1
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; print join("\t", $a[0], $line, \@a[1..$#a])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; print join("\t", $a[0], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; chomp $line; print join("\t", $a[0], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; chomp $line; print join("\t", $a[0], $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; chomp $line; print join("\t", $a[0], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; chomp $line; print join("\t", $a[0], $a[1])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; chomp $line; print join("\t", $a[0], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; chomp $line; print join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; chomp $line; print join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -4
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; chomp $line; print join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep \$a[0] yeastorfs.withIDs.txt`; chomp $line; print $); join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep -P "\$a[0]\t" yeastorfs.withIDs.txt`; chomp $line; print $); join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep -P "\$a[0]\t" yeastorfs.withIDs.txt`; chomp $line; print $line; join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep -P "^\$a[0]\t" yeastorfs.withIDs.txt`; chomp $line; print $line; join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep -P "^\$a[0]\t" yeastorfs.withIDs.txt`; chomp $line; print $line; join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -3
+perl -ne '@a=split /\t/; $line=`grep -P "\^\$a[0]\t" yeastorfs.withIDs.txt`; chomp $line; print $line; join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -3
+perl -ne '@a=split /\t/; $line=`grep -P "\$a[0]\t" yeastorfs.withIDs.txt`; chomp $line; print $line; join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -3
+perl -ne '@a=split /\t/; $line=`grep -P "\$a[0]\t" yeastorfs.withIDs.txt`; chomp $line; print $a[0]."\t".$line; join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -3
+perl -ne '@a=split /\t/; $line=`grep -P "\$a[0]\t" yeastorfs.withIDs.txt`; chomp $line; print $a[0]."\t".$line; join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+less dev.tsv 
+perl -ne '@a=split /\t/; $line=`grep -P "\$a[0]" yeastorfs.withIDs.txt`; chomp $line; print $a[0]."\t".$line; join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep -P "\$a[0]\\t" yeastorfs.withIDs.txt`; chomp $line; print $a[0]."\t".$line; join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep -P "\$a[0]\\\t" yeastorfs.withIDs.txt`; chomp $line; print $a[0]."\t".$line; join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep -P "\$a[0]\t" yeastorfs.withIDs.txt`; chomp $line; print $a[0]."\t".$line; join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep -P "\$a[0]" yeastorfs.withIDs.txt`; chomp $line; print $a[0]."\t".$line; join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; join("\t", $a[0], $a[2], $line, $a[2])."\n";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; join("\t", $a[0], $a[2], $a[2])."\n";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; join("\t", $a[0], $a[2], $a[2])."\n";' <dev.tsv 
+less dev.tsv 
+perl -ne '@a=split /\t/, $_; join("\t", $a[0], $a[2], $a[2])."\n";' <dev.tsv 
+perl -ne '@a=split /\t/, $_; join("\t", $a[0], $a[2], $a[2])."\n";' <dev.tsv | head -2
+which perl
+perl -ne '@a=split /\t/, $_; join("\t", $a[0], $a[1], $a[2])."\n";' <dev.tsv | head -2
+perl -ne '@a=split /\t/, $_; join("\t", $a[0])."\n";' <dev.tsv | head -2
+perl -ne '@a=split /\t/, $_; print join("\t", $a[0])."\n";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep -P "\$a[0]\t" yeastorfs.withIDs.txt`; chomp $line; print join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep -P "\$a[0]" yeastorfs.withIDs.txt`; chomp $line; print join("\t", $a[0], $a[2], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep -P "\$a[0]" yeastorfs.withIDs.txt`; chomp $line; print join("\t", $a[0], $a[1], $line, $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep -P "\$a[0]" yeastorfs.withIDs.txt`; chomp $line; print join("\t", $a[0], $a[1], $a[2])."\n" if $line ne "";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep -P "\$a[0]" yeastorfs.withIDs.txt`; chomp $line; print join("\t", $a[0], $a[1], $line, $a[2])."\n";' <dev.tsv | head -2
+perl -ne '@a=split /\t/; $line=`grep -P "\$a[0]" yeastorfs.withIDs.txt`; chomp $line; print join("\t", $a[0], $a[1], $line, $a[2])."\n";' <dev.tsv | head -1
+touch gen_training_set.pl
+less yeastorfs.withIDs.txt 
+chmod +x gen_training_set.pl 
+./gen_training_set.pl dev.tsv | less
+rm dev.tsv train.tsv test.tsv 
+./gen_training_set.pl ../yeast3utr/dev.tsv | less
+./gen_training_set.pl ../yeast3utr/dev.tsv >dev.tsv
+less dev.tsv 
+./gen_training_set.pl ../yeast3utr/dev.tsv >dev.tsv
+b
+./gen_training_set.pl ../yeast3utr/train.tsv >train.tsv &
+./gen_training_set.pl ../yeast3utr/test.tsv >test.tsv &
+wc -l *tsv
+wc -l ../yeast3utr/*tsv
+less train.tsv 
+nano train.tsv 
+nano test.tsv 
+nano dev.tsv 
+less albert_config.json 
+ls yeastORFModel/
+hgrep yeastorfsWithSPM.tfrecord
+less yeastorfs.codons.encoded.txt
+less yeastorfs.codons.txt
+less yeastORFwCodon.vocab
+les yeastORFwCodon.vocab
+cat *vocab
+ls *vocab
+ls ../Manuscript_Cheng_RNA_2017/
+ls ../yeast3utr/
+cat ../yeast3utr/yeast.stripped.vocab 
+cut -f 1 yeastORFwCodon.vocab 
+cut -f 1 yeastORFwCodon.vocab >yeastORFwCodon.stripped.vocab
+cat ../yeast3utr/yeast.stripped.vocab 
+less yeastorfs.encoded.txt 
+less yeastorfs.codons.encoded.txt 
+time python create_pretraining_data.py --spm_model_file=yeastTest/yeastorfs/yeastORFwCodon.model --input_file=yeastTest/yeastorfs/yeastorfs.codons.encoded.txt --output_file=yeastTest/yeastorfs/yeastorfsWithSPM.codons.tfrecord --short_seq_prob=0.8 --vocab_file=yeastTest/yeastorfs/yeastORFwCodon.stripped.vocab --max_predictions_per_seq=50 --dupe_factor=100 --max_seq_length=1024
+ls
+sudo systemctl restart nxserver
+cp albert_config.json albert_config_codons.json 
+python run_pretraining.py --output_dir yeastORFModelwCodons --do_train --do_eval --input_file yeastTest/yeastorfs/yeastorfsWithSPM.codons.tfrecord --albert_config_file albert_config_codons.json --max_predictions_per_seq=100 --train_batch_size=32 --eval_batch_size=128 --max_seq_length=1024
+python run_pretraining.py --output_dir yeastORFModelwCodons --do_train --do_eval --input_file yeastTest/yeastorfs/yeastorfsWithSPM.codons.tfrecord --albert_config_file albert_config_codons.json --max_predictions_per_seq=50 --train_batch_size=32 --eval_batch_size=128 --max_seq_length=1024
+python run_pretraining.py --output_dir yeastORFModelwCodons --do_train --do_eval --input_file yeastTest/yeastorfs/yeastorfsWithSPM.codons.tfrecord --albert_config_file albert_config_codons.json --max_predictions_per_seq=50 --train_batch_size=16 --eval_batch_size=128 --max_seq_length=1024
+srun --pty --partition=gpu24 --gres=gpu:titanrtx:1 --mem=50g -t 8:00:00 /bin/bash -l
+tensorboard --logdir yeastORFModelwCodons --host localhost --port 2223
+less yeastTest/yeastorfs/dev.tsv 
+python run_regression.py --albert_config_file albert_config_codons.json --data_dir yeastTest/yeastorfs --do_eval --do_lower_case --do_predict --do_train --output_dir yeastOrfswCodonFineTuned --spm_model_file yeastTest/yeastorfs/yeastORFwCodon.model --task_name yeast --vocab_file yeastTest/yeastorfs/yeastORFwCodon.stripped.vocab --init_checkpoint yeastORFModelwCodons/model.ckpt-10000 --train_step 1000 --eval_batch_size 32
+tensorboard --logdir yeastOrfswCodonFineTuned --host localhost --port 2223
+ls yeastORFModelwCodons/
+ls yeastOrfswCodonFineTuned/
 R
+python run_regression.py --albert_config_file albert_config_codons.json --data_dir yeastTest/yeastorfs --do_eval --do_lower_case --do_predict --do_train --output_dir yeastOrfswCodonFineTuned --spm_model_file yeastTest/yeastorfs/yeastORFwCodon.model --task_name yeast --vocab_file yeastTest/yeastorfs/yeastORFwCodon.stripped.vocab --init_checkpoint yeastORFModelwCodons/model.ckpt-10000 --train_step 2000 --eval_batch_size 32
+R
+python run_regression.py --albert_config_file albert_config.json --data_dir yeastTest/yeastorfs --do_eval --do_lower_case --do_predict --do_train --output_dir yeastOrfsFineTuned --spm_model_file yeastTest/yeastorfs/yeastORF.model --task_name yeast --vocab_file yeastTest/yeast3utr/yeast.stripped.vocab --init_checkpoint yeastORFModelwCodonscccccckieveldneigrvfktejccthfgrthrrfdukbihe/model.ckpt-10000 --train_step 2000 --eval_batch_size 32
+python run_regression.py --albert_config_file albert_config.json --data_dir yeastTest/yeastorfs --do_eval --do_lower_case --do_predict --do_train --output_dir yeastOrfsFineTuned --spm_model_file yeastTest/yeastorfs/yeastORF.model --task_name yeast --vocab_file yeastTest/yeast3utr/yeast.stripped.vocab --init_checkpoint yeastORFModel/model.ckpt-10000 --train_step 2000 --eval_batch_size 32
 python
-ps x
-calc 18000-4000
-calc (18000-4000)*5/60
-calc "(18000-4000)*5/60"
-calc "(18000-4000)*5/60/60"
-pwd
-hgrep sshfs
-sshfs vagar@nexus.gs.washington.edu:/net/shendure/ /home/vagar/UW
+python run_regression.py --albert_config_file albert_config.json --data_dir yeastTest/yeastorfs --do_eval --do_lower_case --do_predict --do_train --output_dir yeastOrfsFineTuned --spm_model_file yeastTest/yeastorfs/yeastORF.model --task_name yeast --vocab_file yeastTest/yeast3utr/yeast.stripped.vocab --init_checkpoint yeastORFModel/model.ckpt-10000 --train_step 1000 --eval_batch_size 32
+python run_regression.py --albert_config_file albert_config.json --data_dir yeastTest/yeastorfs --do_eval --do_lower_case --do_predict --do_train --output_dir yeastOrfsFineTuned --spm_model_file yeastTest/yeastorfs/yeastORF.model --task_name yeast --vocab_file yeastTest/yeast3utr/yeast.stripped.vocab --init_checkpoint yeastORFModel/model.ckpt-10000 --train_step 2000 --eval_batch_size 32
+srun --pty --partition=gpu24 --gres=gpu:titanrtx:1 --mem=50g -t 8:00:00 /bin/bash -l
+ls glue/
+tensorboard --logdir yeastOrfsFineTuned --host localhost --port 2223
+R
+less yeastORFwCodon.vocab 
+less yeastORFwCodon.stripped.vocab 
+cp gen_training_set.pl gen_lm_set.pl 
+./gen_lm_set.pl 
+perl gen_lm_set.pl 
+perl gen_lm_set.pl <train.tsv 
+perl gen_lm_set.pl <train.tsv | less
+perl gen_lm_set.pl <train.tsv >train.forLM.tsv 
+perl gen_lm_set.pl <test.tsv >test.forLM.tsv 
+perl gen_lm_set.pl <dev.tsv >dev.forLM.tsv 
+R
+less residuals.txt 
+less train.residuals.tsv 
+wc -l *tsv
+less train.residuals.tsv 
+sort -k1,1 dev.residuals.tsv | uniq -c | sort -nr | less
+sort -k1,1 <(cut -f 1 dev.residuals.tsv) | uniq -c | sort -nr | less
+less train.residuals.tsv 
+sort -k1,1 <(cut -f 1 train.residuals.tsv) | uniq -c | sort -nr | less
+less train.residuals.tsv 
+uniq train.residuals.tsv | wc -l
+less train.residuals.tsv 
+sort -k1,1 <(cut -f 1 train.residuals.tsv) | uniq -c | sort -nr | less
+less train.residuals.tsv 
+nano train.residuals.tsv 
+sort -k1,1 <(cut -f 1 train.residuals.tsv) | uniq -c | sort -nr | less
+nano train.residuals.tsv 
+sort -k1,1 <(cut -f 1 train.residuals.tsv) | uniq -c | sort -nr | less
+nano train.residuals.tsv 
+sort -k1,1 <(cut -f 1 train.residuals.tsv) | uniq -c | sort -nr | less
+nano train.residuals.tsv 
+sort -k1,1 <(cut -f 1 dev.residuals.tsv) | uniq -c | sort -nr | less
+nano dev.residuals.tsv 
+sort -k1,1 <(cut -f 1 test.residuals.tsv) | uniq -c | sort -nr | less
+wc -l *tsv
+less train.residuals.tsv 
+python run_regression.py --albert_config_file albert_config_codons.json --data_dir yeastTest/yeastorfs --do_eval --do_lower_case --do_predict --do_train --output_dir yeastOrfswCodonResidualsFineTuned --spm_model_file yeastTest/yeastorfs/yeastORFwCodon.model --task_name yeast --vocab_file yeastTest/yeastorfs/yeastORFwCodon.stripped.vocab --init_checkpoint yeastORFModelwCodons/model.ckpt-10000 --train_step 1000 --eval_batch_size 32
+python run_regression.py --albert_config_file albert_config_codons.json --data_dir yeastTest/yeastorfs --do_eval --do_lower_case --do_predict --do_train --output_dir yeastOrfswCodonResidualsFineTuned --spm_model_file yeastTest/yeastorfs/yeastORFwCodon.model --task_name yeast --vocab_file yeastTest/yeastorfs/yeastORFwCodon.stripped.vocab --init_checkpoint yeastORFModelwCodons/model.ckpt-10000 --train_step 2000 --eval_batch_size 32
+srun --pty --partition=gpu24 --gres=gpu:titanrtx:1 --mem=50g -t 8:00:00 /bin/bash -l
+tensorboard --logdir yeastOrfswCodonResidualsFineTuned --host localhost --port 2223
+ls yeastorfs/
+ls Weinberg_2016/
+less Weinberg_2016/weinberg_synthesis.txt 
+R
+less initiation_rates.txt 
+wc -l initiation_rates.txt 
+mkdir yeasttranslation
+rmdir yeasttranslation/
+less ../yeastorfs/yeastorfs.withIDs.txt 
+wc -l ../yeastorfs/yeastorfs.withIDs.txt 
+ln -s ../yeastorfs/yeastorfs.withIDs.txt 
+less weinberg_synthesis.txt 
+R
+less initiation_rates_withORF.txt 
+nano initiation_rates_withORF.txt 
+shuf initiation_rates_withORF.txt >initiation_rates_withORF_shuffled.txt 
+wc -l *txt
+less initiation_rates_withORF_shuffled.txt 
+head -3000 initiation_rates_withORF_shuffled.txt >train.tsv
+tail -n+3001 initiation_rates_withORF_shuffled.txt | head -1000 >dev.tsv
+tail -n+4001 initiation_rates_withORF_shuffled.txt | head -839 >dev.tsv
+tail -n+3001 initiation_rates_withORF_shuffled.txt | head -1000 >dev.tsv
+tail -n+4001 initiation_rates_withORF_shuffled.txt | head -839 >test.tsv
+wc -l *tsv
+tail -1 train.tsv | cut -f 1
+head -1 dev.tsv | cut -f 1
+less initiation_rates_withORF_shuffled.txt
+tail -1 dev.tsv | cut -f 1
+head -1 test.tsv | cut -f 1
+less initiation_rates_withORF_shuffled.txt
+python run_regression.py --albert_config_file albert_config_codons.json --data_dir yeastTest/Weinberg_2016/ --do_eval --do_lower_case --do_predict --do_train --output_dir yeastOrfswCodonResiduals_TranslationRate_FineTuned --spm_model_file yeastTest/yeastorfs/yeastORFwCodon.model --task_name yeast --vocab_file yeastTest/yeastorfs/yeastORFwCodon.stripped.vocab --init_checkpoint yeastORFModelwCodons/model.ckpt-10000 --train_step 1000 --eval_batch_size 32
+R
+tensorboard --logdir yeastOrfswCodonResiduals_TranslationRate_FineTuned/ --host localhost --port 2223
+wc -l yeastTest/Weinberg_2016/*tsv
+wget https://downloads.yeastgenome.org/sequence/fungi/L_kluyveri/NRRL-Y12651/NRRL-Y12651_Utah_2010_AACE03000000.fsa.gz
+less NRRL-Y12651_Utah_2010_AACE03000000.fsa.gz 
+rm NRRL-Y12651_Utah_2010_AACE03000000.fsa.gz 
+df -h
+mkdir resources
+mkdir yeast
+ftp hgdownload.cse.ucsc.edu 
+mkdir maf
+mkdir multizi7way
+mv multizi7way/ multiz7way
+mkdir multiz7way/maf
+mv *gz multiz7way/maf/
+rm *md5
+sl
+rm md5sum.txt 
+lh maf/
+rmdir maf
+ls multiz7way/
+mv 7way.nh multiz7way/
+rm upstream*
+s
 ssh vagar@nexus.gs.washington.edu
+sshfs vagar@nexus.gs.washington.edu:/net/shendure/ /home/vagar/UW2
+cp ~/UW2/vol1/home/vagar/software/* .
+cp -r ~/UW2/vol1/home/vagar/software/bash_scripts/ .
+cp -r ~/UW2/vol1/home/vagar/software/perl/ .
+ls perl/
+mafFrag
+mafSplit
+sudo dpkg -i libpng12-0_1.2.54-1ubuntu1.1_amd64.deb
+uname -a
+ldconfig | grep libpng
+ldconfig 
+sudo ldconfig 
+ldconfig
+sudo ldconfig
+less /etc/ld.so.cache 
+wget http://security.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1.1_amd64.deb
+sudo dpkg -i libpng12-0_1.2.54-1ubuntu1.1_amd64.deb
+rm libpng12-0_1.2.54-1ubuntu1.1_amd64.deb 
+mafSplit
+mafFrag
+find ~/UW2/vol1/home/vagar/projects/ -name '*py'
+find ~/UW2/vol1/home/vagar/projects/ -name '*maf'
+find ~/UW2/vol1/home/vagar/projects/ -name '*maf*'
+less ~/software/perl/maf2clustal.pl 
+find ~/UW2/vol1/home/vagar/projects/promoter_prediction/ -name '*maf*'
+find ~/UW2/vol1/home/vagar/projects/expression_prediction/ -name '*maf*'
+find ~/UW2/vol10/projects/expression_prediction/ -name '*maf*'
+ssh vagar@nexus.gs.washington.edu
+mafFrag
+mafFrags
+mafFrag
+mafFetch 
+mafFrag hg19 multiz100way 1 100 200
+mafFrag hg19 multiz100way 1 100 200 test.maf
+mafFrag hg19 multiz100way 1 100 200 + test.maf
+less ~/.hg.conf
+nano ~/.hg.conf
+ls ~
+echo ~
+mafFrag hg19 multiz7way 1 100 200 + test.maf
+lh ~/.hg.conf 
+chmod u+rx ~/.hg.conf 
+lh ~/.hg.conf 
+chmod -rx ~/.hg.conf 
+lh ~/.hg.conf 
+chmod u+rx ~/.hg.conf 
+lh ~/.hg.conf 
+mafFrag hg19 multiz7way 1 100 200 + test.maf
+mysql -h genome-mysql.soe.ucsc.edu -ugenome -A -e "select * from ncbiRefSeq limit 2" hg38
+sudo apt-get install mysql-client
+mysql -h genome-mysql.soe.ucsc.edu -ugenome -A -e "select * from ncbiRefSeq limit 2" hg38
+mafFetch xenTro9 multiz11way region.bed stdout
+mafFrag hg19 multiz7way 1 100 200 + test.maf
+rm ~/.hg.conf 
+mafFrag hg19 multiz7way 1 100 200 + test.maf
+nano ~/.hg.conf
+mafFrag hg19 multiz7way 1 100 200 + test.maf
+chmod -rx ~/.hg.conf 
+chmod u+rx ~/.hg.conf 
+mafFrag hg19 multiz7way 1 100 200 + test.maf
+mafFrag hg19 multiz7way chr1 100 200 + test.maf
+mafFrag hg19 multiz100way chr1 100 200 + test.maf
+less test.maf 
+rm test.maf 
+cat 7way.nh 
+mafFrag sacCer3 multiz7way chrI 100 200 + test.maf
+cat test.maf 
+rm -r maf/
+ls test.maf 
+less test.maf 
+less ~/software/perl/maf2clustal.pl 
+nano ~/.bashrc
+. ~/.bashrc 
+maf2clustal.pl 
+cpanm Bio::AlignIO
+sudo apt-get install cpanminus
+cpanm Bio::AlignIO
+maf2clustal.pl 
+nano ~/.bashrc
+. ~/.bashrc 
+maf2clustal.pl 
+cpanm Bio::AlignIO
+less /home/vagar/.cpanm/work/1579037428.2564/build.log
+perl -e 'use Bio::AlignIO'
+ls ~/perl5
+cpanm XML::DOM::XPath
+wget https://cpan.metacpan.org/authors/id/M/MI/MIROD/XML-DOM-XPath-0.14.tar.gz
+tar -xvzf XML-DOM-XPath-0.14.tar.gz
+nano XML-DOM-XPath-0.14/t/test_non_ascii.t
+tar -czvf XML-DOM-XPath-0.14.tar.gz XML-DOM-XPath-0.14/
+cpanm XML-DOM-XPath-0.14
+cpanm XML-DOM-XPath-0.14/
+cpanm XML-DOM-XPath-0.14.tar.gz 
+nano XML-DOM-XPath-0.14/t/test_non_ascii.t
+tar -czvf XML-DOM-XPath-0.14.tar.gz XML-DOM-XPath-0.14/
+nano XML-DOM-XPath-0.14/t/test_non_ascii.t
+tar -czvf XML-DOM-XPath-0.14.tar.gz XML-DOM-XPath-0.14/
+cpanm XML-DOM-XPath-0.14.tar.gz 
+cpanm Bio::AlignIO
+perl -e 'use Bio::AlignIO'
+nano ~/.bashrc 
+. ~/.bashrc 
+perl -e 'use Bio::AlignIO'
+rm -r multiz7way/
+rm -r resources/
+less SGD_all_ORFs_3prime_UTRs.bed 
+less SGD_all_ORFs_3prime_UTRs.uniq.bed 
+hgrep SGD_all_ORFs_3prime_UTRs.uniq.bed
+less SGD_all_ORFs_3prime_UTRs.uniq.bed 
+wc -l SGD_all_ORFs_3prime_UTRs.uniq.bed 
+less SGD_all_ORFs_3prime_UTRs.uniq.bed 
+mafFrags sacCer3 multiz7way SGD_all_ORFs_3prime_UTRs.uniq.bed test.maf
+mafFrags
+less SGD_all_ORFs_3prime_UTRs.
+less SGD_all_ORFs_3prime_UTRs.uniq.bed 
+perl -ne '@a=split; $a[5]=0; print join("\t", @a);' <SGD_all_ORFs_3prime_UTRs.uniq.bed | less
+perl -ne '@a=split; $a[4]=0; print join("\t", @a);' <SGD_all_ORFs_3prime_UTRs.uniq.bed | less
+perl -ne '@a=split; $a[4]=0; print join("\t", @a), "\n";' <SGD_all_ORFs_3prime_UTRs.uniq.bed | less
+perl -ne '@a=split; $a[4]=0; print join("\t", @a), "\n";' <SGD_all_ORFs_3prime_UTRs.uniq.bed >SGD_all_ORFs_3prime_UTRs.uniq2.bed 
+mafFrags sacCer3 multiz7way SGD_all_ORFs_3prime_UTRs.uniq2.bed test.maf
+less test.
+less test.,
+less test.maf 
+grep chrII SGD_all_ORFs_3prime_UTRs.uniq2.bed | head -1
+mafFrag sacCer3 multiz7way chrI 100 200 + test2.maf
+cat test2.maf 
+mafFrag sacCer3 multiz7way chrII 100 200 + test2.maf
+cat test2.maf 
+mafFrags sacCer3 multiz7way SGD_all_ORFs_3prime_UTRs.uniq2.bed test.maf &
+less test.maf 
+grep YBL107C test.maf 
+grep -A4 YBL107C test.maf 
+grep -A5 YBL107C test.maf 
+grep -A6 YBL107C test.maf 
+maf2clustal.pl <test.maf | less
+less test.maf 
+maf2clustal.pl <test.maf | less
+maf2clustal.pl test.maf | less
+less test.maf 
+wc -l test.maf 
+tail -1 SGD_all_ORFs_3prime_UTRs.uniq2.bed
+tail -10 test.maf 
+less SGD_all_ORFs_3prime_UTRs.uniq2.bed
+les SGD_all_ORFs_3prime_UTRs.uniq2.bed
+less test.maf 
+mafFrags
+less test.maf 
+perl -ne '@a=split; $a[4]=0; $a[1]-=1; $a[2]-=1; print join("\t", @a), "\n";' <SGD_all_ORFs_3prime_UTRs.uniq.bed >SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed 
+rm SGD_all_ORFs_3prime_UTRs.uniq2.bed 
+mafFetch 
+less test2.maf 
+rm test2.maf 
+less test.maf 
+mafFrags sacCer3 multiz7way SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf &
+maf2clustal.pl test.maf | less
+maf2clustal.pl test.maf | wc -l
+maf2clustal.pl SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf | wc -l
+maf2clustal.pl SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf | less
+nano ~/software/perl/maf2clustal.pl 
+maf2clustal.pl SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf | less
+nano ~/software/perl/maf2clustal.pl 
+maf2clustal.pl SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf | less
+nano ~/software/perl/maf2clustal.pl 
+maf2clustal.pl SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf | less
+less SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf
+les SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed 
+mkdir ~/databases
+mkdir yeast
+mkdir multiz7way
+ftp hgdownload.cse.ucsc.edu 
+rm upstream*
+rm md5sum.txt 
+less README.txt 
+less 7way.nh 
+mafsInRegion 
+mafsInRegion SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf ~/databases/yeast/multiz7way/*maf.gz
+less SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf
+mafsInRegion SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf ~/databases/yeast/multiz7way/*maf.gz
+wc -l SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf
+mafsSpli
+mafFetch 
+mafFilter 
+mafGene 
+mafMeFirst 
+mafOrder
+mafRanges
+mafRangesmafSplit
+mafSplit
+mafSplit SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf ~/databases/yeast/multiz7way/*maf.gz
+wc -l SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf
+less SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf
+tail -2 SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed
+less SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf
+tail -2 SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf
+tail -3 SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf
+tail -6 SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf
+grep 158966 SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed 
+less SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed
+les SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed
+grep YML058W SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed test.bed
+grep YML058W SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed >test.bed
+cat test.bed 
+mafSplit test.bed test.maf ~/databases/yeast/multiz7way/*maf.gz
+less test.maf 
+less test.bed 
+less test.maf 
+rm test.maf 
+mafSplit test.bed test.maf ~/databases/yeast/multiz7way/*maf.gz
+nano test.bed 
+mafSplit test.bed test.maf ~/databases/yeast/multiz7way/*maf.gz
+nano test.bed 
+mafSplit test.bed test.maf ~/databases/yeast/multiz7way/*maf.gz
+less test.maf
+mafsInRegion test.bed test.maf ~/databases/yeast/multiz7way/*maf.gz
+less test.maf 
+grep YML058W SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed >test.bed
+mafsInRegion test.bed test.maf ~/databases/yeast/multiz7way/*maf.gz
+less test.maf 
+cat test.maf 
+mafsInRegion SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf ~/databases/yeast/multiz7way/*maf.gz
+less SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf
+less SGD_all_ORFs_3prime_UTRs.uniq.zerobasedchrXVI.99.maf 
+mafSplit
+less SGD_all_ORFs_3prime_UTRs.uniq.zerobasedchrXVI.99.maf 
+grep 948066 SGD_all_ORFs_3prime_UTRs.uniq.bed
+grep 948066 SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed 
+grep 948065 SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed 
+grep 948067 SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed 
+less SGD_all_ORFs_3prime_UTRs.uniq.zerobasedchrXVI.99.maf 
+grep 384408 SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed 
+rm SGD_all_ORFs_3prime_UTRs.uniq.zerobasedchr*
+rm testchr*
+less test.bed 
+mafSplit -byTarget test.bed test.maf ~/databases/yeast/multiz7way/*maf.gz
+lh *maf
+less test000.maf 
+rm test0*
+mafSplit test.bed test.maf ~/databases/yeast/multiz7way/*maf.gz
+less testchrI.00.maf
+nano test.bed 
+less testchrI.00.maf
+lh testchr*
+rm testchr*
+split 
+man split
+split SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed
+man split
+split SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed
+wc -l SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed
+less xaa
+rm xaa xab xac
+man split
+split -d SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed
+less x00
+wc -l x*
+mafsInRegion x00 x00.maf ~/databases/yeast/multiz7way/*maf.gz
+less x00.maf
+mafsInRegion
+mafsInRegion -keepInitialGaps x00 x00.maf ~/databases/yeast/multiz7way/*maf.gz
+less x00.maf
+mafFrags
+mafsInRegion
+mafsInRegion -outDir x00 x00 ~/databases/yeast/multiz7way/*maf.gz
+mkdir x00
+mafsInRegion -outDir x00 x000 ~/databases/yeast/multiz7way/*maf.gz
+less x000/YYIR037W.maf
+less x000/YIR037W.maf
+less x000/YBL064C.maf
+maf2clustal.pl x000/YBL064C.maf
+mafFilter 
+mafsInRegion -outDir SGD_all_ORFs_3prime_UTRs.uniq.zerobased.bed x001 ~/databases/yeast/multiz7way/*maf.gz
+tar xvvzf jydu-maffilter-v1.3.1-9-gc975f4d.tar.gz 
+rm jydu-maffilter-v1.3.1-9-gc975f4d.tar.gz 
+less INSTALL 
+mafFilter 
+man mafFilter
+less INSTALL 
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local
+less INSTALL 
+sudo apt-get install libbpp-core
+uname -a
+wget https://launchpad.net/ubuntu/+source/libbpp-core/2.4.0-3ubuntu0.1
+rm 2.4.0-3ubuntu0.1 
+wget https://launchpad.net/ubuntu/+archive/primary/+files/libbpp-core-dev_2.4.0-3ubuntu0.1_amd64.deb
+dpkg -i libbpp-core-dev_2.4.0-3ubuntu0.1_amd64.deb 
+sudo dpkg -i libbpp-core-dev_2.4.0-3ubuntu0.1_amd64.deb 
+wget https://launchpad.net/ubuntu/+archive/primary/+files/libbpp-core4_2.4.0-3ubuntu0.1_amd64.deb
+sudo dpkg -i libbpp-core4_2.4.0-3ubuntu0.1_amd64.deb 
+rm libbpp-core*
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local
+less INSTALL 
+wget https://launchpad.net/ubuntu/+archive/primary/+files/libbpp-seq12_2.4.0-2ubuntu0.1_amd64.deb
+sudo dpkg -i libbpp-seq12_2.4.0-2ubuntu0.1_amd64.deb 
+rm libbpp-seq12_2.4.0-2ubuntu0.1_amd64.deb 
+less INSTALL 
+wget https://launchpad.net/ubuntu/+archive/primary/+files/libbpp-phyl12_2.4.0-1_amd64.deb
+sudo dpkg -i libbpp-phyl12_2.4.0-1_amd64.deb 
+rm libbpp-phyl12_2.4.0-1_amd64.deb 
+less INSTALL 
+wget https://launchpad.net/ubuntu/+archive/primary/+files/libbpp-phyl-omics3_2.4.0-2_amd64.deb
+sudo dpkg -i libbpp-phyl-omics3_2.4.0-2_amd64.deb 
+wget https://launchpad.net/ubuntu/+archive/primary/+files/libbpp-seq-omics3_2.4.0-2ubuntu0.1_amd64.deb
+sudo dpkg -i libbpp-seq-omics3_2.4.0-2ubuntu0.1_amd64.deb 
+sudo dpkg -i libbpp-phyl-omics3_2.4.0-2_amd64.deb 
+rm libbpp-*
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local
+less CMakeLists.txt 
+les CMakeLists.txt 
+wget https://launchpad.net/ubuntu/+archive/primary/+files/libbpp-phyl-omics3_2.4.0-2_amd64.deb
+sudo dpkg -i libbpp-phyl-omics3_2.4.0-2_amd64.deb 
+rm libbpp-phyl-omics3_2.4.0-2_amd64.deb 
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local
+cmake -DCMAKE_INSTALL_PREFIX=.
+less SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf
+rm -r jydu-maffilter-c975f4d/
+mafFrags sacCer3 multiz7way x00 x00.maf
+mafFrags sacCer3 multiz7way x01 x01.maf &
+mafFrags sacCer3 multiz7way x02 x02.maf &
+less x00.maf
+mafFrag
+rm test.bed 
+rm test.maf 
+rm SGD_all_ORFs_3prime_UTRs.uniq.zerobased.maf
+grep 169115 x01
+grep 169115 SGD_all_ORFs_3prime_UTRs.uniq.bed
+grep 169116 SGD_all_ORFs_3prime_UTRs.uniq.bed
+nano x01 
+mafFrags sacCer3 multiz7way x01 x01.maf &
+mkdir split
+mv x0* split/
+rm -r x000 x001/
+maf2clustal.pl x00.maf | less
+nano ~/software/perl/maf2clustal.pl 
+maf2clustal.pl x00.maf | less
+nano ~/software/perl/maf2clustal.pl 
+maf2clustal.pl x00.maf | less
+nano ~/software/perl/maf2clustal.pl 
+maf2clustal.pl x00.maf | less
+maf2clustal.pl x00.maf | perl -ne '$seq=<>; print "$_$seq" if $seq !~ /\./;' | less
+maf2clustal.pl x00.maf | perl -ne '$seq=<>; print "$_$seq" if $seq !~ /\./;' | wc -l
+maf2clustal.pl x00.maf | perl -ne '$seq=<>; print "$_$seq"' | wc -l
+maf2clustal.pl x00.maf | perl -ne '$seq=<>; print "$_$seq" if $seq !~ /\./;' | wc -l
+maf2clustal.pl x00.maf | perl -ne '$seq=<>; $seq =~ s/\-//d; print "$_$seq" if $seq !~ /\./;' | less
+maf2clustal.pl x00.maf | perl -ne '$seq=<>; $seq =~ s/-//d; print "$_$seq" if $seq !~ /\./;' | less
+maf2clustal.pl x00.maf | perl -ne '$seq=<>; $seq =~ s/-//g; print "$_$seq" if $seq !~ /\./;' | less
+maf2clustal.pl x00.maf | perl -ne '$seq=<>; $seq =~ s/-//g; print "$_$seq" if $seq !~ /\./;' | wc -l
+maf2clustal.pl x00.maf | perl -ne '$seq=<>; $seq =~ s/-//g; print "$seq" if $seq !~ /\./;' | wc -l
+maf2clustal.pl x00.maf | perl -ne '$seq=<>; $seq =~ s/-//g; print "$seq" if $seq !~ /\./;' >all3utrs.txt
+less all3utrs.txt 
+maf2clustal.pl x01.maf | perl -ne '$seq=<>; $seq =~ s/-//g; print "$seq" if $seq !~ /\./;' >>all3utrs.txt
+maf2clustal.pl x02.maf | perl -ne '$seq=<>; $seq =~ s/-//g; print "$seq" if $seq !~ /\./;' >>all3utrs.txt
+wc -l all3utrs.txt 
+less x00
+less x00.maf 
+grep score x00.maf | wc -l
+grep score x01.maf | wc -l
+grep score x02.maf | wc -l
+calc 10428/2849
+less all3utrs.txt 
+perl -ne 'print $_ if length($_) < 10;' <all3utrs.txt | less
+perl -ne 'print $_ if length($_) < 20;' <all3utrs.txt | less
+perl -ne 'print $_ if length($_) >= 20;' <all3utrs.txt >all3utrs.gt20.txt 
+less all3utrs.gt20.txt 
+ls *bed
+less yeastorfs.bed 
+wc -l yeastorfs.bed 
+hgrep yeastorfs.bed 
+mkdir split
+split -d ../yeastorfs.bed 
+wc -l *
+for x in x*; do { echo "mafFrags sacCer3 multiz7way $x $x.maf"; } done
+for x in x*; do { mafFrags sacCer3 multiz7way $x $x.maf & } done
+for x in x*; do { mafFrags sacCer3 multiz7way $x $x.maf &; } done
+for x in x*; do { mafFrags sacCer3 multiz7way $x {$x}.maf & } done
+rm *maf
+for x in x*; do { mafFrags sacCer3 multiz7way $x $x\.maf & } done
+rm *maf
+for x in x*; do mafFrags sacCer3 multiz7way $x $x.maf & done
+rm *maf
+for x in x*; do echo mafFrags sacCer3 multiz7way $x $x.maf & done
+for x in x*; do echo mafFrags sacCer3 multiz7way $x $x.maf; done
+for x in x*; do echo "mafFrags sacCer3 multiz7way $x $x.maf &"; done
+mafFrags sacCer3 multiz7way x00 x00.maf &
+mafFrags sacCer3 multiz7way x01 x01.maf &
+mafFrags sacCer3 multiz7way x02 x02.maf &
+mafFrags sacCer3 multiz7way x03 x03.maf &
+mafFrags sacCer3 multiz7way x04 x04.maf &
+mafFrags sacCer3 multiz7way x05 x05.maf &
+mafFrags sacCer3 multiz7way x06 x06.maf &
+mafFrags sacCer3 multiz7way x02 x02.maf
+hgrep zerobased
+perl -ne '@a=split; $a[4]=0; $a[1]-=1; $a[2]-=1; print join("\t", @a), "\n";' <yeastorfs.bed >yeastorfs.zerobased.bed 
+rm x*
+split -d ../yeastorfs.zerobased.bedbed 
+split -d ../yeastorfs.zerobased.bed
+for x in x*; do mafFrags sacCer3 multiz7way $x $x.maf & done
+for x in x*.maf; do { maf2clustal.pl $x | perl -ne '$seq=<>; $seq =~ s/-//g; print "$seq" if $seq !~ /\./;' >>allorfs.txt; } done
+less allorfs.txt 
+less ../yeastorfs.bed 
+mafFrag sacCer3 multiz7way chrI    24000   27968  + test2.maf
+less test2.maf 
+grep 24000 ../yeastorfs.bed 
+mafFrag sacCer3 multiz7way chrI    24000   27968  - test2.maf
+less test2.maf 
+grep -a2 24000 ../yeastorfs.bed 
+mafFrag sacCer3 multiz7way chrI 21566 21850 + test2.maf
+cat test2.maf 
+mafFrag sacCer3 multiz7way chrI 21566 21850 + test2.maf
+cat test2.maf 
+perl -ne '@a=split; $a[4]=0; if ($str eq "+"){ $a[1]-=1;} else { $a[2]-=1; } print join("\t", @a), "\n";' <yeastorfs.bed >yeastorfs.zerobased.bed 
+head -3 yeastorfs.zerobased.bed
+head -1- yeastorfs.zerobased.bed
+head -10 yeastorfs.zerobased.bed
+mafFrag sacCer3 multiz7way 130799 131982 + test2.maf
+mafFrag sacCer3 multiz7way chrI 130799 131982 + test2.maf
+cat test2.maf 
+perl -ne '@a=split; $a[4]=0; if ($str eq "+"){ $a[2]-=1;} else { $a[1]-=1; } print join("\t", @a), "\n";' <yeastorfs.bed >yeastorfs.zerobased.bed 
+head -10 yeastorfs.zerobased.bed
+mafFrag sacCer3 multiz7way chrI 130798 131983 + test2.maf
+cat test2.maf 
+head -10 yeastorfs.zerobased.bed
+mafFrag sacCer3 multiz7way chrI 334 649 + test2.maf
+cat test2.maf 
+mafFrag sacCer3 multiz7way chrI 1806 2169 - test2.maf
+cat test2.maf 
+split -d ../yeastorfs.zerobased.bed
+rm *maf
+for x in x*; do mafFrags sacCer3 multiz7way $x $x.maf & done
+less x00.maf 
+~/software/StarORF.bin
+chmod +x ~/software/StarORF.bin
+~/software/StarORF.bin
+less ~/software/StarORF.bin 
+sudo apt-get install java
+sudo apt-get install java-common
+java 
+less ~/software/StarORF.bin 
+~/software/StarORF.bin 
+les ~/software/StarORF.bin 
+sudo apt-get install locate
+~/software/StarORF.bin 
+sudo apt install default-jre
+java -version
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt update
+sudo apt install oracle-java8-installer
+apt list --upgradable
+sudo apt install oracle-java8-installer
+sudo apt-get install oracle-java8-installer
+sudo apt-get install oracle-java8-installersudo apt-get install oracle-java8-set-default
+sudo apt-get install oracle-java8-set-defaultsu -
+echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee /etc/apt/sources.list.d/webupd8team-java.list
+echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
+su -
+cat >orffinder.py
+python orffinder.py 
+which python
+python orffinder.py 
+python
+/usr/bin/python2 orffinder.py 
+less orffinder.py 
+/usr/bin/python2 orffinder.py 
+wget ftp://emboss.open-bio.org/pub/EMBOSS/EMBOSS-6.5.7.tar.gz
+less em
+wget ftp://emboss.open-bio.org/pub/EMBOSS/EMBOSS-6.6.0.tar.gz
+tar xvvzf EMBOSS-6.6.0.tar.gz 
+sudo apt-get install emboss
+sudo apt-get install emboss-lib
+sudo apt autoremove
+embossversion 
+emboss
+embossupdate 
+embossdata
+needle
+getorf 
+rm -r EMBOSS-6.6.0*
+less x03
+less allorfs.txt 
+less x00.maf 
+for x in x*.maf; do { maf2clustal.pl $x | perl -ne '$seq=<>; $seq =~ s/-//g; print "$seq" if $seq !~ /\./;' >$x.seq.txt; } done
+for x in x*.maf; do { maf2clustal.pl $x | perl -ne '$seq=<>; $seq =~ s/-//g; print "$seq" if $seq !~ /\./;' >$x.seq.txt & } done
+less x00.maf.seq.txt
+head -1 x02.maf.seq.txt >test.txt
+getorf test.txt 
+getorf <test.txt 
+nano 
+nano test.txt 
+getorf <test.txt 
+getorf test.txt 
+getorf
+git clone https://github.com/sestaton/HMMER2GO.git
+less INSTALL.md 
+sudo apt-get install -y emboss zlib1g-dev libxml2-dev
+less INSTALL.md 
+curl -L cpanmin.us | perl - git://github.com/sestaton/HMMER2GO.git
+less /home/vagar/.cpanm/work/1579118325.26316/build.log
+sudo apt-get install hmmer
+curl -L cpanmin.us | perl - git://github.com/sestaton/HMMER2GO.git
+perl Makefile.PL
+make 
+make test
+make install
+sudo make install
+hmmer2go 
+hmmer2go getorf
+rm -r HMMER2GO/
+hmmer2go getorf -c -t 2 -l 100 test
+hmmer2go getorf -c -t 2 -l 100 test.txt 
+hmmer2go getorf -c -t 2 -l 100 <test.txt 
+hmmer2go getorf -c -t 2 -l 100 -i test.txt 
+hmmer2go getorf -c -t 2 -l 100 -i test.txt -o test.out
+cat test.out 
+for x in x*.maf; do { maf2clustal.pl $x | perl -ne '$seq=<>; $seq =~ s/-//g; chomp $seq; print "$_$seq" if $seq !~ /\./;' >$x.seq.fa & } done
+for x in x*.maf; do { maf2clustal.pl $x | perl -ne '$seq=<>; $seq =~ s/-//g; chomp $seq; print "$_$seq\n" if $seq !~ /\./;' >$x.seq.fa & } done
+less x00.maf.seq.fa
+hmmer2go getorf -c -t 2 -l 100 -i x00.maf.seq.fa -o test.out
+rm test.out 
+hmmer2go getorf -c -t 2 -l 100 -i x00.maf.seq.fa -o test.out
+less test.ot
+less test.out 
+JOBS
+hmmer2go getorf -c -l 100 -i x00.maf.seq.fa -o test.out2
+less test.out2 
+qhmmer2go getorf --man
+hmmer2go getorf --man
+sudo apt-get install perl-doc
+hmmer2go getorf --man
+hmmer2go getorf -c -t 3 -l 100 -i x00.maf.seq.fa -o test.out3
+less test.out3 
+JOBS
+hmmer2go getorf --man
+hmmer2go getorf -c -t 3 -l 100 -i x00.maf.seq.fa -s -o test.out4
+less test.out4
+hmmer2go getorf --man
+less test.out4
+hmmer2go getorf -c -t 3 -l 100 -i x00.maf.seq.fa -o test.out5
+less test.out5 
+less x00.maf.seq.fa 
+less test.out5 
+hmmer2go getorf --man
+less test.out5 
+less x00.maf.seq.fa 
+grep -C 5 387 x00.maf.seq.fa | less
+grep -C 2 387 x00.maf.seq.fa | less
+grep -B 1 387 x00.maf.seq.fa | less
+grep -B 1 387 x00.maf.seq.fa | grep ATGATG | less
+less x00.maf.seq.fa 
+rm test.*
+rm *.txt
+rm orffinder.py 
+less x00.maf.seq_54_1cBE.fa 
+less x00.maf.seq_*
+rm x00.maf.seq_*
+for x in x*.maf; do { maf2clustal.pl $x | perl -ne '$seq=<>; $seq =~ s/-//g; chomp $seq; print "$_$seq\n" if $seq !~ /\./;' >$x.fa & } done
+rm *seq.fa
+for x in x*.maf.fa; do { hmmer2go getorf -c -t 3 -l 100 -i $x -o $x.codons.fa && unjustify_fasta.pl $x.codons.fa & } done
+hmmer2go getorf --man
+less x02.maf.fa.codons.fa
+less x06.maf.fa.codons.fa.prepared
+LS
+JOBS
+perl -ne '$seq = <>; next if $_ =~ /REVERSE/; ($start, $stop, $start1, $stop1) =~ /()()()()/;; print "";' <x06.maf.fa.codons.fa.prepared | less
+head -2 x06.maf.fa.codons.fa.prepared
+head -4 x06.maf.fa.codons.fa.prepared
+less x06.maf.fa.codons.fa.prepared
+perl -ne '$seq = <>; next if $_ =~ /REVERSE/; ($len, $start1, $stop1) =~ /_1-(\d+)_\d+ \[(\d+) - (\d+)\]/;; print "$len, $start1, $stop1";' <x06.maf.fa.codons.fa.prepared | less
+perl -ne '$seq = <>; next if $_ =~ /REVERSE/; ($len, $start1, $stop1) =~ /\_1-(\d+)\_\d+ \[(\d+) - (\d+)\]/;; print "$len, $start1, $stop1";' <x06.maf.fa.codons.fa.prepared | less
+perl -ne '$seq = <>; next if $_ =~ /REVERSE/; ($len, $start1, $stop1) = ($_ =~ /\_1-(\d+)\_\d+ \[(\d+) - (\d+)\]/); print "$len, $start1, $stop1";' <x06.maf.fa.codons.fa.prepared | less
+perl -ne '$seq = <>; next if $_ =~ /REVERSE/; ($len, $start1, $stop1) = ($_ =~ /\_1-(\d+)\_\d+ \[(\d+) - (\d+)\]/); print "$len, $start1, $stop1\n";' <x06.maf.fa.codons.fa.prepared | less
+perl -ne '$seq = <>; next if $_ =~ /REVERSE/; ($len, $start1, $stop1) = ($_ =~ /\_1-(\d+)\_\d+ \[(\d+) - (\d+)\]/); print "$len, $start1, $stop1\n".(($stop1-$start1)/$len)."\n";' <x06.maf.fa.codons.fa.prepared | less
+perl -ne '$seq = <>; next if $_ =~ /REVERSE/; ($len, $start1, $stop1) = ($_ =~ /\_1-(\d+)\_\d+ \[(\d+) - (\d+)\]/); print (($stop1-$start1)/$len)."\n";' <x06.maf.fa.codons.fa.prepared | less
+perl -ne '$seq = <>; next if $_ =~ /REVERSE/; ($len, $start1, $stop1) = ($_ =~ /\_1-(\d+)\_\d+ \[(\d+) - (\d+)\]/); print (($stop1-$start1)/$len)."\n\n";' <x06.maf.fa.codons.fa.prepared | less
+perl -ne '$seq = <>; next if $_ =~ /REVERSE/; ($len, $start1, $stop1) = ($_ =~ /\_1-(\d+)\_\d+ \[(\d+) - (\d+)\]/); print (($stop1-$start1)/$len)."\n\r";' <x06.maf.fa.codons.fa.prepared | less
+perl -ne '$seq = <>; next if $_ =~ /REVERSE/; ($len, $start1, $stop1) = ($_ =~ /\_1-(\d+)\_\d+ \[(\d+) - (\d+)\]/); print "\n".(($stop1-$start1)/$len)."\n";' <x06.maf.fa.codons.fa.prepared | less
+perl -ne '$seq = <>; next if $_ =~ /REVERSE/; ($len, $start1, $stop1) = ($_ =~ /\_1-(\d+)\_\d+ \[(\d+) - (\d+)\]/); print "\n".(($stop1-$start1)/$len);' <x06.maf.fa.codons.fa.prepared | less
+perl -ne '$seq = <>; next if $_ =~ /REVERSE/; ($len, $start1, $stop1) = ($_ =~ /\_1-(\d+)\_\d+ \[(\d+) - (\d+)\]/); print "\n".(($stop1-$start1)/$len);' <x06.maf.fa.codons.fa.prepared >fractions.txt
+R
+perl -ne '$seq = <>; next if $_ =~ /REVERSE/; ($len, $start1, $stop1) = ($_ =~ /\_1-(\d+)\_\d+ \[(\d+) - (\d+)\]/); $seq =~ s/\s+$//; print "$_$seq\n" if (($stop1-$start1)/$len) >= 0.9;' <x06.maf.fa.codons.fa.prepared | less
+less ../yeastorfs.codons.txt 
+hgrep yeastorfs.codons.encoded.txt
+perl -ne '$seq = <>; next if $_ =~ /REVERSE/; ($len, $start1, $stop1) = ($_ =~ /\_1-(\d+)\_\d+ \[(\d+) - (\d+)\]/); $seq =~ s/\s+$//; print "$seq\n" if (($stop1-$start1)/$len) >= 0.9;' <x06.maf.fa.codons.fa.prepared | perl -ne 'chomp; for($i=0; $i < length($_)-3; $i+=3){ print substr($_,$i,3)." "; } print substr($_,$i,3)."\n\n";' <yeastorfs.txt >yeastorfs.codons.encoded.txt 
+perl -ne '$seq = <>; next if $_ =~ /REVERSE/; ($len, $start1, $stop1) = ($_ =~ /\_1-(\d+)\_\d+ \[(\d+) - (\d+)\]/); $seq =~ s/\s+$//; print "$seq\n" if (($stop1-$start1)/$len) >= 0.9;' <x06.maf.fa.codons.fa.prepared | perl -ne 'chomp; for($i=0; $i < length($_)-3; $i+=3){ print substr($_,$i,3)." "; } print substr($_,$i,3)."\n\n";' >yeastorfs.codons.encoded.txt 
+less yeastorfs.codons.encoded.txt 
+for x in x*.maf.fa.prepared; do { perl -ne '$seq = <>; next if $_ =~ /REVERSE/; ($len, $start1, $stop1) = ($_ =~ /\_1-(\d+)\_\d+ \[(\d+) - (\d+)\]/); $seq =~ s/\s+$//; print "$seq\n" if (($stop1-$start1)/$len) >= 0.9;' <$x >$x.correctLen.txt & } done
+for x in x*.maf.fa.codons.fa.prepared; do { perl -ne '$seq = <>; next if $_ =~ /REVERSE/; ($len, $start1, $stop1) = ($_ =~ /\_1-(\d+)\_\d+ \[(\d+) - (\d+)\]/); $seq =~ s/\s+$//; print "$seq\n" if (($stop1-$start1)/$len) >= 0.9;' <$x >$x.correctLen.txt & } done
+less x00.maf.fa.codons.fa.prepared.correctLen.txt
+LS
+cat *correctLen* >ALLFINAL.txt
+less ALLFINAL.txt 
+wc -l ALLFINAL.txt 
+wc -l ../yeastorfs.codons.txt
+calc 20948/6692
 less ~/.bashrc 
-hgrep git
-hgrep git
-less transformer_expression_prediction_8gb.gin 
-hgrep gin
-less transformer_imdb_8gb.gin 
-less ~/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene-1/hparams.json 
-less ~/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene-1/flags.txt 
-less ~/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene-1/flags_t2t.txt 
-less ~/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene-1/events.out.tfevents.1565651055.p100-00 
-less ~/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene-1/flags
-less ~/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene-1/flags_t2t.txt 
-less ~/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene-1/graph.pbtxt 
-less ~/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene-1/hparams.json 
-less ~/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene-1/model.ckpt-0.index 
-hgrep gin
-hgrep gin | grep -v imdb
-tensorboard --logdir ~/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene-1/ --host localhost --port 2223
-tensorboard --logdir ~/t2t_train/expression_level_predict_pca/transformer_encoder-transformer_gene/ --host localhost --port 2223
-tensorboard --logdir ~/t2t_train/expression_level_predict_pca/trax_transformer5/ --host localhost --port 2223
-less ~/t2t_train/expression_level_predict_pca/trax_transformer5/backward.txt 
-less ~/t2t_train/expression_level_predict_pca/trax_transformer5/config.gin 
-grep t2t_expression_level_predict_pca *py
-grep t2t_expression_level_predict_pca *gin
-less transformer_expression_prediction_8gb.gin
-hgrep transformer_expression_prediction_8gb.gin
-hgrep trax_transformer5
-grep trax_transformer5 ~/.bash_history*
-grep git ~/.bash_history*
-grep xargs ~/.bash_history*
-less ~/tf1.14/src/tensor2tensor/tensor2tensor/trax/trainer.py 
-find predict_expression/ \( -name '.py' -or -name '.ipynb' -or -name '.sb' -or -name '.gin' -or -name '.joblib' -or -name '*.sh'  \) | xargs git add; git commit -m "commit"; git push origin master
-find predict_expression/ \( -name '.py' -or -name '.ipynb' -or -name '.sb' -or -name '.gin' -or -name '.joblib' -or -name '*.sh'  \) | xargs git add;
-find predict_expression/ \( -name '.py' -or -name '.ipynb' -or -name '.sb' -or -name '.gin' -or -name '.joblib' -or -name '*.sh'  \) | xargs git add 
-find predict_expression/ \( -name '.py' -or -name '.ipynb' -or -name '.sb' -or -name '.gin' -or -name '.joblib' -or -name '*.sh'  \) | xargs git add .
-find predict_expression/ \( -name '.py' -or -name '.ipynb' -or -name '.sb' -or -name '.gin' -or -name '.joblib' -or -name '*.sh'  \) 
-find predict_expression/ \( -name '.py' -or -name '.ipynb' -or -name '.sb' -or -name '.gin' -or -name '.joblib' -or -name '*.sh'  \) | xargs ls
-find predict_expression/ \( -name '.py' -or -name '.ipynb' -or -name '.sb' -or -name '.gin' -or -name '.joblib' -or -name '*.sh'  \) 
-find predict_expression/ ( -name '.py' -or -name '.ipynb' -or -name '.sb' -or -name '.gin' -or -name '.joblib' -or -name '*.sh' ) 
-find predict_expression/ \( -name '.py' -or -name '.ipynb' -or -name '.sb' -or -name '.gin' -or -name '.joblib' -or -name '*.sh' \) 
-find predict_expression \( -name '.py' -or -name '.ipynb' -or -name '.sb' -or -name '.gin' -or -name '.joblib' -or -name '*.sh' \) 
-find predict_expression -name '.py' -or -name '.ipynb' -or -name '.sb' -or -name '.gin' -or -name '.joblib' -or -name '*.sh'
-find predict_expression -name '.py' 
-find predict_expression -name '*.py' 
-find predict_expression -name '*.py' -or -name '*.ipynb' -or -name '*.sb' -or -name '*.gin' -or -name '*.joblib' -or -name '*.sh'
-find predict_expression -name '*.py' -or -name '*.ipynb' -or -name '*.sb' -or -name '*.gin' -or -name '*.joblib' -or -name '*.sh' | xargs git add
-git commit -m "commit"; git push origin master
-git config --global --edit
-less .gitconfig 
-git commit -m "commit"; git push -u origin master
-git pull --rebase origin master; git push -u origin master
-git push -f origin master
-find . -name '*.bash*' -or -name '.Rprofile' -or -name '.inputrc' | xargs git add
-find . -name '.bash*' -or -name '.Rprofile' -or -name '.inputrc' | xargs git add
-find . -name '.bash*' -or -name '.Rprofile' -or -name '.inputrc' 
-find . -name -name '.Rprofile' -or -name '.inputrc' 
-find . -name '.Rprofile' -or -name '.inputrc' 
-find . -name '*py'
-find . -name '.Rprofile' 
-find . -name '*Rprofile' 
-find ./ -name '*Rprofile' 
-find predict_expression/ -name '*Rprofile' 
-rm 'Screencast from 10-04-19 14:10:23.webm' 
-find /home/vagar -name '*Rprofile' 
-find /home/vagar -name '*R' 
-find /home/vagar -name '*Rprofile' 
-find /home/vagar -name '*profile' 
-man find
-find /home/vagar -d 1 -name '*profile' 
-find -d 1 /home/vagar/ -name '*profile' 
-find -depth 1 /home/vagar/ -name '*profile' 
-find /home/vagar/ -depth 1 -name '*profile' 
-find /home/vagar/ -depth 2 -name '*profile' 
-find /home/vagar/ -depth=2 -name '*profile' 
-find /home/vagar/ -depth 2 -name '*profile' 
-find /home/vagar/ -maxdepth 2 -name '*profile' 
-find /home/vagar/ -maxdepth 1 -name '*profile' 
-find . -maxdepth 2 -name '.bash*' -or -name '.Rprofile' -or -name '.inputrc' 
-find . -maxdepth 2 -name '.bash*' -or -name '.Rprofile' -or -name '.inputrc' | xargs git add
-git commit -m "commit"; git push -u origin master
-nano ~/.bashrc 
-nano tretest_gene_local.sb 
-nano ~/.bashrc 
-. ~/.bashrc 
-which gitadd 
-alias gitadd
-nano ~/.bashrc 
-. ~/.bashrc 
-alias gitadd
-gitadd
-alias gitadd
-nano ~/.bashrc 
-. ~/.bashrc 
-alias gitadd
+ls ~/predict_expression/
+less ~/.bashrc 
+gitadd 

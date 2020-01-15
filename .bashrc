@@ -23,7 +23,7 @@ export DIR=$HOME
 export SOF=$DIR/software
 export TMP=$DIR/tmp
 #export PATH=$PATH
-export PERL5LIB=$PERL5LIB
+export PERL5LIB=$PERL5LIB:~/software/perl:/home/vagar/perl5/lib/perl5
 export LESS='-S'
 #export LD_LIBRARY_PATH=$LD_LIBRARY_PATH
 #export PYTHONPATH=$BASSETDIR/src
@@ -109,5 +109,5 @@ export BASENJIDIR=~/software/basenji
 export PYTHONPATH=$BASENJIDIR/bin:$BASENJIDIR:/home/vagar/predict_expression/models:$PYTHONPATH
 export LD_LIBRARY_PATH="/usr/local/cuda-10.1/targets/x86_64-linux/lib/:$LD_LIBRARY_PATH"
 source ~/tf1.14/bin/activate
-export PATH=$BASENJIDIR/bin:~/software:$PATH
+export PATH=$BASENJIDIR/bin:~/software:$PATH:~/software/perl
 #grive
