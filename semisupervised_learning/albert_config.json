@@ -1,7 +1,0 @@
-{
-  "num_attention_heads": 2,
-  "hidden_size": 128,
-  "vocab_size": 8,
-  "num_hidden_layers": 2,
-  "max_position_embeddings": 2048
-}
