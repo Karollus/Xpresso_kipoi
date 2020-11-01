@@ -1,8 +1,10 @@
-defined_as: kipoi.model.Xpresso
+defined_as: model.Xpresso
 args:
     weights:
         url: {{ model_weights_url }}
         md5: {{ model_weights_md5 }}
+        #url: https://zenodo.org/record/4075690/files/humanMedian_trainepoch.11-0.426.h5
+        #md5: 9d00a3bc614da81655328b6e278569e2
 
 default_dataloader:
     defined_as: kipoiseq.dataloaders.SeqIntervalDl
