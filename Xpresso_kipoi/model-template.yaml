@@ -12,6 +12,7 @@ default_dataloader:
     default_args:
         alphabet_axis: 1
         alphabet: "ACGT" # Order of letters in 1-hot encoding
+        use_strand: True
         ignore_targets: False # if True, dont return any target variables
 
 info: # General information about the model
